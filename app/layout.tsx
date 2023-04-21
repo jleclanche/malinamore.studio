@@ -1,21 +1,21 @@
-import './globals.css'
+import "./globals.css";
 
-import Footer from './Footer'
-import Header from './Header'
+import Footer from "./Footer";
+import Header from "./Header";
 
-import { Inter } from 'next/font/google'
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-	title: 'Malina More Studio',
-	description: 'Art & ceramics studio in Brussels',
-}
+	title: "Malina More Studio",
+	description: "Art & ceramics studio in Brussels",
+};
 
 export default function RootLayout({
 	children,
 }: {
-	children: React.ReactNode
+	children: React.ReactNode;
 }) {
 	return (
 		<html className="min-h-screen" lang="en">
@@ -25,5 +25,5 @@ export default function RootLayout({
 				<Footer />
 			</body>
 		</html>
-	)
+	);
 }
