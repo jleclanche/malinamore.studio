@@ -151,8 +151,8 @@ export default function Home() {
 				</p>
 				<p>
 					Based in the Brussels Capital region and co-managed by Anna and her
-					partner Jerome, the ASBL's goals are to teach and showcase the arts
-					of ceramics, gravure, photography, and other fine arts.
+					partner Jerome, the ASBL&apos;s goals are to teach and showcase the
+					arts of ceramics, gravure, photography, and other fine arts.
 				</p>
 				<p>
 					Are you looking for work or volunteering opportunities, please{" "}
