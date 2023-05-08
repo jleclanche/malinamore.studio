@@ -21,7 +21,9 @@ const navigation = [
 
 const Header = () => (
 	<header className="flex justify-between flex-wrap gap-y-4 bg-black text-white p-6">
-		<span className="uppercase font-bold tracking-wider">Malina More Studio</span>
+		<span className="uppercase font-bold tracking-wider">
+			<Link href="/">Malina More Studio</Link>
+		</span>
 		<nav className="space-x-4">
 			{navigation.map((item) => (
 				<Link className="font-medium" key={item.title} href={item.href}>
