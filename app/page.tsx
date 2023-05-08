@@ -187,14 +187,14 @@ export default function Home() {
 					</div>
 					<div>
 						<h1 className="font-semibold text-xl">Opening hours</h1>
-						<ul className="!pl-0 grid grid-cols-2 grid-flow-dense text-zinc-200 child:flex child:items-center">
+						<ul className="!pl-0 !space-y-0 grid grid-cols-2 gap-y-1 grid-flow-dense text-zinc-200">
 							<li>Mon—Fri:</li>
 							<li>13:00—18:00</li>
 
-							<li className="self-start">Saturday:</li>
-							<li className="!inline-block">
+							<li>Saturday:</li>
+							<li>
 								12:00—19:00{" "}
-								<span className="block gap-x-1">
+								<span className="block">
 									<BookOpenIcon /> classes only
 								</span>
 							</li>
