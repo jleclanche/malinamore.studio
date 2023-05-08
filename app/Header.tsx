@@ -7,7 +7,7 @@ const navigation = [
 	},
 	{
 		title: "About",
-		href: "#about",
+		href: "/about",
 	},
 	{
 		title: "Team",
