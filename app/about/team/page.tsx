@@ -6,26 +6,26 @@ import WebsiteLogo from "@/app/components/WebsiteLogo";
 const people = [
 	{
 		name: "Anna Radovenchik",
-		role: "Ceramist • President • Administrator",
+		roles: ["Ceramist", "President", "Administrator"],
 		image: "/images/team/anna.jpg",
 		instagram: "https://instagram.com/malina_more",
 	},
 	{
 		name: "Jerome Leclanche",
-		role: "Treasurer • Administrator",
+		roles: ["Treasurer", "Administrator"],
 		image: "/images/team/jerome.png",
 		website: "https://leclan.ch",
 		linkedin: "https://www.linkedin.com/in/jleclanche",
 	},
 	{
 		name: "Daria Shcherbak",
-		role: "Secretary • Administrator",
+		roles: ["Secretary", "Administrator"],
 		image: "/images/team/daria.jpg",
 		linkedin: "https://www.linkedin.com/in/daria-shcherbak-56747a102",
 	},
 	{
 		name: "Joella Priam",
-		role: "Coordinator",
+		roles: ["Coordinator"],
 		image: "/images/team/joella.jpg",
 		linkedin: "https://www.linkedin.com/in/joella-priam",
 	},
@@ -53,7 +53,13 @@ const TeamPage = () => (
 						<p className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
 							{person.name}
 						</p>
-						<p className="text-sm leading-6 text-gray-600">{person.role}</p>
+						<p className="text-sm leading-6 text-gray-600">
+							{person.roles.map((role) => (
+								<span className="before:content-['•'] first:before:content-[''] before:mx-1">
+									{role}
+								</span>
+							))}
+						</p>
 						<ul className="mt-6 flex justify-center gap-x-6">
 							{person.website ? (
 								<li>
