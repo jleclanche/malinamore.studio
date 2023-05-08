@@ -39,7 +39,7 @@ const TeamPage = () => (
 					Meet the team
 				</h1>
 				<p className="mt-4 text-lg leading-8 text-gray-600">
-					The people behind Malina More ASBL.
+					The people behind Malina More
 				</p>
 			</div>
 			<ul
