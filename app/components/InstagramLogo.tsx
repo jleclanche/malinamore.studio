@@ -1,5 +1,9 @@
 const InstagramLogo = () => (
-	<svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+	<svg
+		className="h-6 w-6"
+		xmlns="http://www.w3.org/2000/svg"
+		viewBox="2.19 2.19 15.63 15.63"
+	>
 		<path fill="currentColor" d="M7.5 10a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Z" />
 		<path
 			fill="currentColor"
