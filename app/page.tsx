@@ -121,7 +121,8 @@ export default function Home() {
 					<div>
 						<p className="font-bold text-lg">Kiln Firings</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<CalendarDaysIcon /> we fire our kilns at least once, on Fridays
+							<CalendarDaysIcon /> we fire our kilns at least once, on
+							Fridays
 						</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
 							<ArchiveBoxIcon /> pickups are available on Mondays
