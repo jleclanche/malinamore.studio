@@ -168,16 +168,19 @@ export default function Home() {
 						<h1 className="font-semibold text-xl">Find us</h1>
 						<ul className="!pl-0 text-zinc-200 child:flex child:items-center child:gap-x-2">
 							<li>
-								<MapPinIcon /> Rue Rossini 19
+								<MapPinIcon title="Address" /> Rue Rossini 19
 							</li>
 							<li>
-								<BuildingLibraryIcon /> Anderlecht City Hall
+								<BuildingLibraryIcon title="Landmark" /> near Anderlecht
+								City Hall
 							</li>
 							<li>
-								<BelgianMetroLogo /> M. Clemenceau
+								{/* TODO: add `title` prop to <BelgianMetroLogo /> */}
+								<BelgianMetroLogo /* title="Metro station" */ /> Metro
+								station Clemenceau
 							</li>
 							<li>
-								<AtSymbolIcon />{" "}
+								<AtSymbolIcon title="Email address" />{" "}
 								<Link href={mailto}>contact@malinamore.studio</Link>
 							</li>
 						</ul>
