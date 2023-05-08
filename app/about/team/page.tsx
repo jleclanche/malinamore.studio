@@ -42,10 +42,7 @@ const TeamPage = () => (
 					The people behind Malina More
 				</p>
 			</div>
-			<ul
-				role="list"
-				className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
-			>
+			<ul className="flex flex-wrap justify-evenly gap-x-8 gap-y-16 max-w-2xl mx-auto mt-20">
 				{people.map((person) => (
 					<li key={person.name}>
 						<img
