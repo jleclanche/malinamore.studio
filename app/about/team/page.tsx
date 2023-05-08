@@ -53,9 +53,9 @@ const TeamPage = () => (
 							src={person.image}
 							alt={`Picture of ${person.name}`}
 						/>
-						<h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
+						<p className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
 							{person.name}
-						</h3>
+						</p>
 						<p className="text-sm leading-6 text-gray-600">{person.role}</p>
 						<ul role="list" className="mt-6 flex justify-center gap-x-6">
 							{person.website ? (
