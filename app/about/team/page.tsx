@@ -51,7 +51,7 @@ const TeamPage = () => (
 						<img
 							className="mx-auto h-56 rounded-full"
 							src={person.image}
-							alt=""
+							alt={`Picture of ${person.name}`}
 						/>
 						<h3 className="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">
 							{person.name}
