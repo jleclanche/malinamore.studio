@@ -49,7 +49,7 @@ const TeamPage = () => (
 				{people.map((person) => (
 					<li key={person.name}>
 						<img
-							className="mx-auto h-56 w-56 rounded-full"
+							className="mx-auto h-56 rounded-full"
 							src={person.image}
 							alt=""
 						/>
