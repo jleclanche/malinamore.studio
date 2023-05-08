@@ -57,7 +57,7 @@ const TeamPage = () => (
 							{person.name}
 						</p>
 						<p className="text-sm leading-6 text-gray-600">{person.role}</p>
-						<ul role="list" className="mt-6 flex justify-center gap-x-6">
+						<ul className="mt-6 flex justify-center gap-x-6">
 							{person.website ? (
 								<li>
 									<ExternalLink
