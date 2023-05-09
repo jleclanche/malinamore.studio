@@ -14,11 +14,13 @@ export const metadata = {
 
 export default function RootLayout({
 	children,
+	params: { lang },
 }: {
 	children: React.ReactNode;
+	params: { lang: string };
 }) {
 	return (
-		<html className="min-h-screen" lang="en">
+		<html className="min-h-screen" lang={lang}>
 			<body className={`${inter.className} min-h-full`}>
 				<Header />
 				{children}
