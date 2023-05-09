@@ -1,9 +1,27 @@
 {
 	"header": {
 		"services": "Services",
-		"about": "About",
-		"team": "Team",
+		"about": "À Propos",
+		"team": "Équipe",
 		"contact": "Contact"
 	},
-	"studioName": "Malina More Studio"
+	"footer": {
+		"findUs": "Trouvez nous",
+		"openingHours": "Heures d'ouverture",
+		"classesOnly": "cours uniquement",
+		"locations": {
+			"address": "Rue Rossini 19",
+			"landmark": "près de la mairie d'Anderlecht",
+			"metro": "Métro Clémenceau"
+		},
+		"weekdays": {
+			"mondayAbbrev": "Lun",
+			"fridayAbbrev": "Ven",
+			"saturday": "Samedi",
+			"sunday": "Dimanche"
+		},
+		"closed": "fermé"
+	},
+	"studioName": "Malina More Studio",
+	"ASBLName": "Malina More ASBL"
 }

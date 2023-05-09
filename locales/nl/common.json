@@ -1,9 +1,27 @@
 {
 	"header": {
-		"services": "Services",
-		"about": "About",
+		"services": "Diensten",
+		"about": "Over",
 		"team": "Team",
 		"contact": "Contact"
 	},
-	"studioName": "Malina More Studio"
+	"footer": {
+		"findUs": "Vind ons",
+		"openingHours": "Openingstijden",
+		"classesOnly": "alleen lessen",
+		"locations": {
+			"address": "Rossinistraat 19",
+			"landmark": "nabij het stadhuis van Anderlecht",
+			"metro": "Metrostation Clemenceau"
+		},
+		"weekdays": {
+			"mondayAbbrev": "Ma",
+			"fridayAbbrev": "Vr",
+			"saturday": "Zaterdag",
+			"sunday": "Zondag"
+		},
+		"closed": "gesloten"
+	},
+	"studioName": "Malina More Studio",
+	"ASBLName": "Malina More VZW"
 }

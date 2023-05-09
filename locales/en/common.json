@@ -4,5 +4,24 @@
 		"about": "About",
 		"team": "Team",
 		"contact": "Contact"
-	}
+	},
+	"footer": {
+		"findUs": "Find us",
+		"openingHours": "Opening hours",
+		"classesOnly": "classes only",
+		"locations": {
+			"address": "Rue Rossini 19",
+			"landmark": "near Anderlecht City Hall",
+			"metro": "Metro station Clemenceau"
+		},
+		"weekdays": {
+			"mondayAbbrev": "Mon",
+			"fridayAbbrev": "Fri",
+			"saturday": "Saturday",
+			"sunday": "Sunday"
+		},
+		"closed": "closed"
+	},
+	"studioName": "Malina More Studio",
+	"ASBLName": "Malina More ASBL"
 }
