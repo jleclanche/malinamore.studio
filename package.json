@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@calcom/embed-react": "^1.0.12",
 		"@heroicons/react": "^2.0.17",
 		"@types/node": "20.1.0",
 		"@types/react": "18.2.6",
