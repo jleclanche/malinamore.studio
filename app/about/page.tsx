@@ -1,5 +1,6 @@
-import Image from "next/image";
 import StudioInside from "@/app/assets/images/studio_inside.jpg";
+import Image from "next/image";
+import ExternalLink from "../components/ExternalLink";
 
 const AboutPage = () => (
 	<main className="flex flex-col items-center py-16">
@@ -28,11 +29,14 @@ const AboutPage = () => (
 				Hall and metro station Clemenceau.
 			</p>
 			<p className="max-w-2xl mx-auto mt-4 leading-6">
-				Malina More was founded by Anna Radovenchik, a ceramics artist with a
-				passion for teaching. Giving as much care and attention to the studio as
-				she does to her porcelain, Anna – along with her partner Jerome – has
-				managed to create a cozy, spacious studio equipped with everything
-				necessary for comfortable work.
+				Malina More was founded by{" "}
+				<ExternalLink href="https://instagram.com/malina_more">
+					Anna Radovenchik
+				</ExternalLink>
+				, a ceramics artist with a passion for teaching. Giving as much care and
+				attention to the studio as she does to her porcelain, Anna created a
+				spacious yet cozy studio, fully-equipped for classes and workshops in
+				ceramics and other arts & crafts.
 			</p>
 		</section>
 	</main>
