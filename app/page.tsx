@@ -44,7 +44,7 @@ export default function Home() {
 					Art & Ceramics Studio in Brussels
 				</p>
 
-				{/* TODO: have the title to use Inter Display (2023-04-18: in beta) */}
+				{/* TODO: have the title to use Inter Display (2023-05-10: in beta) */}
 				<p className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter my-6">
 					Learn. Grow. Share.
 				</p>
