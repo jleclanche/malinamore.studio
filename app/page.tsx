@@ -65,7 +65,7 @@ export default function Home() {
 				<EmailSubscriptionWidget />
 			</section>
 
-			<section>
+			<section className="max-w-5xl">
 				<div
 					className={clsx(
 						"flex flex-col md:flex-row items-center gap-x-8 gap-y-4 w-[125%] max-w-[125%] -ml-[12.5%]",
