@@ -31,7 +31,7 @@ export default function Home() {
 			className={clsx(
 				"flex flex-col items-center overflow-x-hidden",
 				// INTERNAL STYLESHEET
-				"child:p-[5%] child:max-w-5xl child:space-y-4",
+				"child:p-[5%] child:space-y-4",
 				"[&_a]:text-sky-500 [&_a:hover]:underline",
 				// add regular heading spacing
 				"[&>*>h1+*]:!mt-8",
@@ -39,7 +39,7 @@ export default function Home() {
 				"[&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-4 md:[&_svg]:w-4 [&_svg]:inline"
 			)}
 		>
-			<section>
+			<section className="max-w-5xl">
 				<p className="text-lg md:text-2xl font-medium text-zinc-500">
 					Art & Ceramics Studio in Brussels
 				</p>
@@ -60,7 +60,7 @@ export default function Home() {
 				</p>
 			</section>
 
-			<section className="md:!py-0">
+			<section className="max-w-2xl md:!py-0 text-center">
 				<h2 className="font-bold text-xl">Sign up to the monthly newsletter</h2>
 				<EmailSubscriptionWidget />
 			</section>
@@ -93,7 +93,7 @@ export default function Home() {
 
 			<section
 				id="what-we-do"
-				className="bg-zinc-100 w-full !max-w-[100vw] child:max-w-5xl child:mx-auto"
+				className="bg-zinc-100 w-full max-w-[100vw] child:max-w-5xl child:mx-auto"
 			>
 				<h1 className="font-bold text-2xl text-center">What We Do</h1>
 
@@ -143,7 +143,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="about" className="!py-12">
+			<section id="about" className="!py-12 max-w-5xl">
 				<h1 className="font-bold text-2xl text-center">About Malina More</h1>
 				<p>
 					Malina More ASBL was founded by Anna Radovenchik, by her wish of
