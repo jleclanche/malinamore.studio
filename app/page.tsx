@@ -45,9 +45,9 @@ export default function Home() {
 				</p>
 
 				{/* TODO: have the title to use Inter Display (2023-04-18: in beta) */}
-				<h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter my-6">
+				<p className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter my-6">
 					Learn. Grow. Share.
-				</h1>
+				</p>
 
 				<p>
 					Malina More Studio is a beautiful 180m<sup>2</sup> ceramics, arts &
