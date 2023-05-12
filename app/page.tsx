@@ -22,7 +22,6 @@ import Crescents from "./assets/images/crescents.jpg";
 import Handed from "./assets/images/handed.jpg";
 import Prime from "./assets/images/prime.jpg";
 import Six from "./assets/images/six.jpg";
-import BookingCalendar from "./components/BookingCalendar";
 
 const mailto = "mailto:contact@malinamore.studio";
 
@@ -65,11 +64,11 @@ export default function Home() {
 				<h2 className="font-bold text-xl">Sign up to the monthly newsletter</h2>
 				<EmailSubscriptionWidget />
 			</section>
-
+			{/*
 			<section className="self-stretch overflow-hidden text-center">
 				<h2 className="font-bold text-xl">Schedule a class</h2>
 				<BookingCalendar />
-			</section>
+			</section> */}
 
 			<section className="max-w-5xl">
 				<div
