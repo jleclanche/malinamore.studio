@@ -1,6 +1,5 @@
 import {
 	ClockIcon,
-	CubeIcon,
 	EnvelopeIcon,
 	InformationCircleIcon,
 	LanguageIcon,
@@ -21,12 +20,8 @@ export default function Home() {
 		<main
 			className={clsx(
 				"flex flex-col items-center overflow-x-hidden",
-				"gap-10",
+				"gap-10 leading-7",
 				"[&_a]:text-sky-500 [&_a:hover]:underline",
-				// add regular heading spacing
-				"[&>*>h1+*]:!mt-8",
-				"[&_ul]:pl-6 [&_ul]:py-2 [&_ul]:space-y-1 [&_ul.list-dash>li]:pl-1",
-				"[&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-4 md:[&_svg]:w-4 [&_svg]:inline",
 			)}
 		>
 			<section className="max-w-5xl py-5">
@@ -96,14 +91,15 @@ export default function Home() {
 					<div>
 						<p className="font-bold text-lg">Group lessons</p>
 						<p className="text-sm text-zinc-500 flex md:items-center gap-x-1">
-							<ClockIcon /> Our weekly group lessons begin in June!
+							<ClockIcon className="w-5 h-5" /> Our weekly group lessons
+							begin in June!
 						</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<EnvelopeIcon />
+							<EnvelopeIcon className="w-5 h-5" />
 							<EmailLink email={email}>Contact us</EmailLink> to reserve a
 							spot
 						</p>
-						<ul className="list-dash">
+						<ul className="list-dash pl-4">
 							<li>
 								Free-style ceramics (Weekly - good for beginners): 40 €
 							</li>
@@ -115,14 +111,15 @@ export default function Home() {
 					<div>
 						<p className="font-bold text-lg">On-demand classes</p>
 						<p className="text-sm text-zinc-500 flex md:items-center gap-x-1">
-							<ClockIcon />
+							<ClockIcon className="w-5 h-5" />
 							<EmailLink email={email}>Contact us</EmailLink> at least 5
 							days in advance
 						</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<LanguageIcon /> Available in English or French
+							<LanguageIcon className="w-5 h-5" /> Available in English or
+							French
 						</p>
-						<ul className="list-dash">
+						<ul className="list-dash pl-4">
 							<li>1-3 people: 100 € / 85 € / 75 € / person</li>
 							<li>4+ people: 50 € / lesson / person</li>
 							<li>10+ people & birthdays: custom prices available</li>
@@ -135,7 +132,7 @@ export default function Home() {
 				id="what-we-do"
 				className="bg-zinc-100 w-full max-w-[100vw] child:max-w-5xl child:mx-auto py-5"
 			>
-				<h1 className="font-bold text-2xl text-center">
+				<h1 className="font-bold text-2xl text-center mb-5">
 					Other services available
 				</h1>
 
@@ -145,49 +142,63 @@ export default function Home() {
 						"child:space-y-1 md:child:space-y-0.5",
 					)}
 				>
-					<div>
+					<div className="flex flex-col gap-3">
 						<p className="font-bold text-lg">Co-working space</p>
-						<p className="text-sm text-zinc-500 flex md:items-center gap-x-1">
-							<ClockIcon /> each lesson lasts ~2 hours and includes
-							complimentary tea or coffee
+						<p>
+							We have a large, open space available for co-working. Art
+							tools and materials are available for use and we can make
+							extra services available upon request. Please contact us at
+							least 3 days in advance to reserve a spot.
 						</p>
-						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<CubeIcon /> price includes standard equipment rental,
-							materials
-						</p>
-						<ul className="list-dash">
-							<li>1-3 people: 100 € / 85 € / 75 € / person</li>
-							<li>4+ people: 50 € / lesson / person</li>
-							<li>
-								15+ people:{" "}
-								<EmailLink email={email}>contact us</EmailLink>
-							</li>
+						<ul className="list-dash pl-4">
+							<li>1 table or desk: 25 € / half-day (4 hours)</li>
+							<li>Materials: Prices vary</li>
+							<li>Discounts for regular access</li>
 						</ul>
 					</div>
 
-					<div>
+					<div className="flex flex-col gap-3">
 						<p className="font-bold text-lg">Kiln Firings</p>
-						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<InformationCircleIcon /> Prices indicative for a height of
-							up to 5cm. Kiln plate diameter: 35cm
+						<p className="text-sm text-zinc-500 flex gap-x-1">
+							<InformationCircleIcon className="w-5 h-5" /> Prices
+							indicative for a height of up to 5cm. Kiln plate diameter:
+							35cm
 						</p>
-						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<ReceiptPercentIcon /> 10% off for members and bisque
-							firings
+						<p className="text-sm text-zinc-500 flex gap-x-1">
+							<ReceiptPercentIcon className="w-5 h-5" /> 10% off for
+							members and bisque firings
 						</p>
-						<ul className="list-dash">
-							<li>Temperatures: 950°C / 1250°C</li>
-							<li>Quarter plate: 6 € / 8 €</li>
-							<li>Half plate: 11 € / 15 €</li>
-							<li>Full plate: 20 € / 25 €</li>
-							<li>Or 100 € / 120 € for a full kiln load</li>
+						<ul className="list-dash p-x-4">
+							<li className="grid grid-cols-3">
+								<span>Temperature 🌡</span>
+								<span>950°C</span>
+								<span>1250°C</span>
+							</li>
+							<li className="grid grid-cols-3">
+								<span>Quarter plate ◔</span>
+								<span>6 €</span>
+								<span>8 €</span>
+							</li>
+							<li className="grid grid-cols-3">
+								<span>Half plate ◑</span>
+								<span>11 €</span>
+								<span>15 €</span>
+							</li>
+							<li className="grid grid-cols-3">
+								<span>Full plate ●</span>
+								<span>20 €</span>
+								<span>25 €</span>
+							</li>
+							<li className="grid grid-cols-3">
+								<span>Full kiln</span>
+								<span>100 €</span>
+								<span>120 €</span>
+							</li>
 						</ul>
 						<p className="text-sm text-zinc-500">
 							We fire our kilns at least once a week, on Fridays (pickup
-							on Mondays).
-						</p>
-						<p className="text-sm text-zinc-500">
-							For special shapes, bulk orders, and custom temperatures,{" "}
+							on Mondays). For special shapes, bulk orders, and custom
+							temperatures,{" "}
 							<EmailLink email={email}>contact us</EmailLink>.
 						</p>
 					</div>
@@ -195,7 +206,9 @@ export default function Home() {
 			</section>
 
 			<section id="about" className="!py-12 max-w-5xl">
-				<h1 className="font-bold text-2xl text-center">About Malina More</h1>
+				<h1 className="font-bold text-2xl text-center mb-5">
+					About Malina More
+				</h1>
 				<p>
 					Malina More ASBL was founded by Anna Radovenchik, by her wish of
 					sharing her admiration of art and her passion for porcelain.
@@ -218,19 +231,22 @@ export default function Home() {
 				<div className="grid grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 w-full max-w-5xl p-5">
 					<div>
 						<h1 className="font-semibold text-xl">Find us</h1>
-						<ul className="!pl-0 text-zinc-200 child:flex child:items-center child:gap-x-2">
+						<ul className="text-zinc-200 child:flex child:items-center child:gap-x-2">
 							<li>
-								<MapPinIcon title="Address" />
+								<MapPinIcon title="Address" className="w-5 h-5" />
 								<ExternalLink href="https://goo.gl/maps/cpYJ3jmpV7xyLUneA?coh=178571&entry=tt">
 									Rue Rossini 19, 1070 Anderlecht
 								</ExternalLink>
 							</li>
 							<li>
-								<MapIcon />
+								<MapIcon className="w-5 h-5" />
 								Metro station: Clemenceau
 							</li>
 							<li>
-								<EnvelopeIcon title="Email address" />{" "}
+								<EnvelopeIcon
+									title="Email address"
+									className="w-5 h-5"
+								/>{" "}
 								<EmailLink email={email} />
 							</li>
 						</ul>

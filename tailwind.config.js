@@ -9,7 +9,7 @@ module.exports = {
 	],
 	theme: {
 		listStyleType: {
-			dash: "'\\2014'",
+			dash: "'\\2013\\00a0'",
 		},
 		extend: {},
 	},
