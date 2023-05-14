@@ -4,24 +4,22 @@ import Link from "next/link";
 import clsx from "clsx";
 
 import {
-	ArchiveBoxIcon,
-	CalendarDaysIcon,
 	ClockIcon,
 	CubeIcon,
+	EnvelopeIcon,
+	InformationCircleIcon,
+	LanguageIcon,
+	MapIcon,
+	ReceiptPercentIcon,
 } from "@heroicons/react/24/outline";
-import {
-	AtSymbolIcon,
-	BookOpenIcon,
-	BuildingLibraryIcon,
-	MapPinIcon,
-} from "@heroicons/react/24/solid";
-import BelgianMetroLogo from "./components/BelgianMetroLogo";
+import { MapPinIcon } from "@heroicons/react/24/solid";
 
 import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
 import Crescents from "./assets/images/crescents.jpg";
 import Handed from "./assets/images/handed.jpg";
 import Prime from "./assets/images/prime.jpg";
 import Six from "./assets/images/six.jpg";
+import ExternalLink from "./components/ExternalLink";
 
 const mailto = "mailto:contact@malinamore.studio";
 
@@ -30,8 +28,7 @@ export default function Home() {
 		<main
 			className={clsx(
 				"flex flex-col items-center overflow-x-hidden",
-				// INTERNAL STYLESHEET
-				"child:p-[5%] child:space-y-4",
+				"gap-10",
 				"[&_a]:text-sky-500 [&_a:hover]:underline",
 				// add regular heading spacing
 				"[&>*>h1+*]:!mt-8",
@@ -39,7 +36,7 @@ export default function Home() {
 				"[&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-4 md:[&_svg]:w-4 [&_svg]:inline"
 			)}
 		>
-			<section className="max-w-5xl">
+			<section className="max-w-5xl py-5">
 				<p className="text-lg md:text-2xl font-medium text-zinc-500">
 					Art & Ceramics Studio in Brussels
 				</p>
@@ -61,7 +58,9 @@ export default function Home() {
 			</section>
 
 			<section className="max-w-2xl md:!py-0 text-center">
-				<h2 className="font-bold text-xl">Sign up to the monthly newsletter</h2>
+				<h2 className="font-bold text-xl mb-4">
+					Sign up to the monthly newsletter
+				</h2>
 				<EmailSubscriptionWidget />
 			</section>
 			{/*
@@ -97,10 +96,59 @@ export default function Home() {
 			</section>
 
 			<section
-				id="what-we-do"
-				className="bg-zinc-100 w-full max-w-[100vw] child:max-w-5xl child:mx-auto"
+				id="our-classes"
+				className="bg-zinc-100 w-full max-w-[100vw] child:max-w-5xl child:mx-auto py-5 gap-5"
 			>
-				<h1 className="font-bold text-2xl text-center">What We Do</h1>
+				<h1 className="font-bold text-2xl text-center">Our classes</h1>
+
+				<p>
+					Discover the art of ceramics with Anna! Each of our lessons lasts
+					~2.5 hours and includes 1kg clay per person, equipment, and
+					complimentary tea or coffee. Members get 20% off all lessons!
+				</p>
+
+				<div className="grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4">
+					<div>
+						<p className="font-bold text-lg">Group lessons</p>
+						<p className="text-sm text-zinc-500 flex md:items-center gap-x-1">
+							<ClockIcon /> Our weekly group lessons begin in June!
+						</p>
+						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
+							<EnvelopeIcon /> <Link href={mailto}>Contact us</Link> to
+							reserve a spot
+						</p>
+						<ul className="list-dash">
+							<li>
+								Free-style ceramics (Weekly - good for beginners): 40 €
+							</li>
+							<li>Introduction to ceramics (Monthly - 10 spots): 45 €</li>
+							<li>Introduction to glazing (Monthly - 10 spots): 50 €</li>
+							<li>More coming soon!</li>
+						</ul>
+					</div>
+					<div>
+						<p className="font-bold text-lg">On-demand classes</p>
+						<p className="text-sm text-zinc-500 flex md:items-center gap-x-1">
+							<ClockIcon /> <Link href={mailto}>Contact us</Link> at least
+							5 days in advance
+						</p>
+						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
+							<LanguageIcon /> Available in English or French
+						</p>
+						<ul className="list-dash">
+							<li>1-3 people: 100 € / 85 € / 75 € / person</li>
+							<li>4+ people: 50 € / lesson / person</li>
+							<li>10+ people & birthdays: custom prices available</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="what-we-do"
+				className="bg-zinc-100 w-full max-w-[100vw] child:max-w-5xl child:mx-auto py-5"
+			>
+				<h1 className="font-bold text-2xl text-center">Other services</h1>
 
 				<div
 					className={clsx(
@@ -109,40 +157,48 @@ export default function Home() {
 					)}
 				>
 					<div>
-						<p className="font-bold text-lg">Ceramics Classes</p>
+						<p className="font-bold text-lg">Co-working space</p>
 						<p className="text-sm text-zinc-500 flex md:items-center gap-x-1">
-							<ClockIcon /> each lesson lasts 2 ~ 2
-							<span className="fraction">1/2</span> hours
+							<ClockIcon /> each lesson lasts ~2 hours and includes
+							complimentary tea or coffee
 						</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<CubeIcon /> price includes equipment rental and materials
+							<CubeIcon /> price includes standard equipment rental,
+							materials
 						</p>
 						<ul className="list-dash">
-							<li>1-3 people: 100 € / lesson / person</li>
+							<li>1-3 people: 100 € / 85 € / 75 € / person</li>
 							<li>4+ people: 50 € / lesson / person</li>
+							<li>
+								15+ people: <Link href={mailto}>contact us</Link>
+							</li>
 						</ul>
 					</div>
 
 					<div>
 						<p className="font-bold text-lg">Kiln Firings</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<CalendarDaysIcon /> we fire our kilns at least once, on
-							Fridays
+							<InformationCircleIcon /> Prices indicative for a height of
+							up to 5cm. Kiln plate diameter: 35cm
 						</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<ArchiveBoxIcon /> pickups are available on Mondays
+							<ReceiptPercentIcon /> 10% off for members and bisque
+							firings
 						</p>
 						<ul className="list-dash">
-							<li>
-								Under 15cm<sup>3</sup>: 3 € / piece
-							</li>
-							<li>
-								Under 30cm<sup>3</sup>: 6 € / piece
-							</li>
+							<li>Temperatures: 950°C / 1250°C</li>
+							<li>Quarter plate: 6 € / 8 €</li>
+							<li>Half plate: 11 € / 15 €</li>
+							<li>Full plate: 20 € / 25 €</li>
+							<li>Or 100 € / 120 € for a full kiln load</li>
 						</ul>
 						<p className="text-sm text-zinc-500">
-							For larger pieces, bulk orders, and special firings,{" "}
-							<Link href={mailto}>contact us</Link>
+							We fire our kilns at least once a week, on Fridays (pickup
+							on Mondays).
+						</p>
+						<p className="text-sm text-zinc-500">
+							For special shapes, bulk orders, and custom temperatures,{" "}
+							<Link href={mailto}>contact us</Link>.
 						</p>
 					</div>
 				</div>
@@ -169,45 +225,34 @@ export default function Home() {
 				id="contact"
 				className="w-full !max-w-[100vw] bg-black text-white flex justify-center !px-0"
 			>
-				<div className="grid grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 w-full max-w-5xl px-[5%]">
+				<div className="grid grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 w-full max-w-5xl p-5">
 					<div>
 						<h1 className="font-semibold text-xl">Find us</h1>
 						<ul className="!pl-0 text-zinc-200 child:flex child:items-center child:gap-x-2">
 							<li>
-								<MapPinIcon title="Address" /> Rue Rossini 19
+								<MapPinIcon title="Address" />
+								<ExternalLink href="https://goo.gl/maps/cpYJ3jmpV7xyLUneA?coh=178571&entry=tt">
+									Rue Rossini 19, 1070 Anderlecht
+								</ExternalLink>
 							</li>
 							<li>
-								<BuildingLibraryIcon title="Landmark" /> near Anderlecht
-								City Hall
+								<MapIcon />
+								Metro station: Clemenceau
 							</li>
 							<li>
-								{/* TODO: add `title` prop to <BelgianMetroLogo /> */}
-								<BelgianMetroLogo /* title="Metro station" */ /> Metro
-								station Clemenceau
-							</li>
-							<li>
-								<AtSymbolIcon title="Email address" />{" "}
-								<Link href={mailto}>contact@malinamore.studio</Link>
+								<EnvelopeIcon title="Email address" />{" "}
+								<ExternalLink href={mailto}>
+									contact@malinamore.studio
+								</ExternalLink>
 							</li>
 						</ul>
 					</div>
 					<div>
 						<h1 className="font-semibold text-xl">Opening hours</h1>
-						<ul className="!pl-0 !space-y-0 grid grid-cols-2 gap-y-1 grid-flow-dense text-zinc-200">
-							<li>Mon—Fri:</li>
-							<li>13:00—18:00</li>
-
-							<li>Saturday:</li>
+						<ul className="gap-y-1 text-zinc-200 !px-0">
+							<li>Mon – sat: 13:00 – 18:00 (appointment required)</li>
 							<li>
-								12:00—19:00{" "}
-								<span className="block">
-									<BookOpenIcon /> classes only
-								</span>
-							</li>
-
-							<li>Sunday:</li>
-							<li className="text-zinc-400">
-								<span className="line-through">closed</span>
+								Sunday: <span className="line-through">closed</span>
 							</li>
 						</ul>
 					</div>

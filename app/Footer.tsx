@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ExternalLink from "./components/ExternalLink";
 import InstagramLogo from "./components/InstagramLogo";
 
 const Footer = () => (
@@ -8,13 +8,13 @@ const Footer = () => (
 				<span>©</span>
 				<div>
 					<p>2023 Malina More ASBL</p>
-					<p>Reg. 0800.279.001</p>
+					<p>BCE 0800.279.001</p>
 				</div>
 			</div>
 			<div className="flex items-center">
-				<Link href="https://instagram.com/malina_more_studio">
+				<ExternalLink href="https://instagram.com/malina_more_studio">
 					<InstagramLogo />
-				</Link>
+				</ExternalLink>
 			</div>
 		</div>
 	</footer>

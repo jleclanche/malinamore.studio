@@ -16,13 +16,8 @@ module.exports = {
 	plugins: [
 		require("@tailwindcss/typography"),
 		// custom extensions
-		plugin(({ addUtilities, addVariant }) => {
+		plugin(({ addVariant }) => {
 			addVariant("child", "& > *");
-			addUtilities({
-				".fraction": {
-					"font-feature-settings": "'frac'",
-				},
-			});
 		}),
 	],
 };
