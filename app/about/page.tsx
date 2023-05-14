@@ -1,4 +1,3 @@
-import StudioInside from "@/app/assets/images/studio_inside.jpg";
 import Image from "next/image";
 import ExternalLink from "../components/ExternalLink";
 
@@ -16,7 +15,7 @@ const AboutPage = () => (
 		</section>
 		<section className="max-w-7xl mt-10 px-6 lg:px-8">
 			<Image
-				src={StudioInside}
+				src="/images/photos/studio_inside.jpg"
 				className="rounded-lg w-3/4 mx-auto"
 				unoptimized
 				alt="Inside Malina More"

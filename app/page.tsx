@@ -1,8 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-
-import clsx from "clsx";
-
 import {
 	ClockIcon,
 	CubeIcon,
@@ -13,13 +8,11 @@ import {
 	ReceiptPercentIcon,
 } from "@heroicons/react/24/outline";
 import { MapPinIcon } from "@heroicons/react/24/solid";
-
+import clsx from "clsx";
+import Link from "next/link";
 import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
-import Crescents from "./assets/images/crescents.jpg";
-import Handed from "./assets/images/handed.jpg";
-import Prime from "./assets/images/prime.jpg";
-import Six from "./assets/images/six.jpg";
 import ExternalLink from "./components/ExternalLink";
+import Gallery from "./components/Gallery";
 
 const mailto = "mailto:contact@malinamore.studio";
 
@@ -69,45 +62,37 @@ export default function Home() {
 				<BookingCalendar />
 			</section> */}
 
-			<section className="max-w-5xl">
-				<div
-					className={clsx(
-						"flex flex-col md:flex-row items-center gap-x-8 gap-y-4 w-[125%] max-w-[125%] -ml-[12.5%]",
-						"child:flex child:items-center child:h-48 child:rounded-md child:object-cover",
-					)}
-				>
-					<Image
-						src={Prime}
-						unoptimized
-						alt="A flower-shaped blue vase holding a white flower, next to a set of similar colored vases"
-					/>
-					<Image
-						src={Handed}
-						unoptimized
-						alt="A hand holding a stack of ceramic dishes"
-					/>
-					<Image
-						src={Crescents}
-						unoptimized
-						alt="Two crescent-shaped plates, behind a blurred green plant"
-					/>
-					<Image src={Six} unoptimized alt="Six small colorful deep dishes" />
-				</div>
+			<section className="max-w-5xl flex flex-col gap-5">
+				<Gallery
+					photos={[
+						{ src: "/images/photos/gallery/1.jpg" },
+						{ src: "/images/photos/gallery/2.jpg" },
+						{ src: "/images/photos/gallery/3.jpg" },
+						{ src: "/images/photos/gallery/4.jpg" },
+					]}
+				/>
 			</section>
 
 			<section
 				id="our-classes"
-				className="bg-zinc-100 w-full max-w-[100vw] child:max-w-5xl child:mx-auto py-5 gap-5"
+				className="bg-zinc-100 w-full max-w-[100vw] py-5 flex flex-col gap-5"
 			>
 				<h1 className="font-bold text-2xl text-center">Our classes</h1>
 
-				<p>
-					Discover the art of ceramics with Anna! Each of our lessons lasts
-					~2.5 hours and includes 1kg clay per person, equipment, and
-					complimentary tea or coffee. Members get 20% off all lessons!
-				</p>
+				<div className="mx-auto">
+					<p>
+						<strong>Discover the art of ceramics with Anna!</strong>{" "}
+						Talented ceramist since 2010 and with seven years of experience
+						teaching the art, you will learn from the best in the craft.
+					</p>
+					<p>
+						Each lesson lasts ~2.5 hours and includes 1kg clay per person,
+						equipment, and complimentary tea or coffee. Members get 20% off
+						all lessons!
+					</p>
+				</div>
 
-				<div className="grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4">
+				<div className="grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 mx-auto">
 					<div>
 						<p className="font-bold text-lg">Group lessons</p>
 						<p className="text-sm text-zinc-500 flex md:items-center gap-x-1">
@@ -148,7 +133,9 @@ export default function Home() {
 				id="what-we-do"
 				className="bg-zinc-100 w-full max-w-[100vw] child:max-w-5xl child:mx-auto py-5"
 			>
-				<h1 className="font-bold text-2xl text-center">Other services</h1>
+				<h1 className="font-bold text-2xl text-center">
+					Other services available
+				</h1>
 
 				<div
 					className={clsx(
