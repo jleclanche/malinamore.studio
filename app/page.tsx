@@ -9,12 +9,12 @@ import {
 } from "@heroicons/react/24/outline";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 import clsx from "clsx";
-import Link from "next/link";
 import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
+import EmailLink from "./components/EmailLink";
 import ExternalLink from "./components/ExternalLink";
 import Gallery from "./components/Gallery";
 
-const mailto = "mailto:contact@malinamore.studio";
+const email = "contact@malinamore.studio";
 
 export default function Home() {
 	return (
@@ -46,7 +46,7 @@ export default function Home() {
 				<p>
 					We host weekly ceramic classes, kiln rental, and can provide
 					co-working and event space. To find out more, contact us at{" "}
-					<Link href={mailto}>contact@malinamore.studio</Link>.
+					<EmailLink email={email} />.
 				</p>
 			</section>
 
@@ -99,8 +99,9 @@ export default function Home() {
 							<ClockIcon /> Our weekly group lessons begin in June!
 						</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
-							<EnvelopeIcon /> <Link href={mailto}>Contact us</Link> to
-							reserve a spot
+							<EnvelopeIcon />
+							<EmailLink email={email}>Contact us</EmailLink> to reserve a
+							spot
 						</p>
 						<ul className="list-dash">
 							<li>
@@ -114,8 +115,9 @@ export default function Home() {
 					<div>
 						<p className="font-bold text-lg">On-demand classes</p>
 						<p className="text-sm text-zinc-500 flex md:items-center gap-x-1">
-							<ClockIcon /> <Link href={mailto}>Contact us</Link> at least
-							5 days in advance
+							<ClockIcon />
+							<EmailLink email={email}>Contact us</EmailLink> at least 5
+							days in advance
 						</p>
 						<p className="text-sm text-zinc-500 flex items-center gap-x-1">
 							<LanguageIcon /> Available in English or French
@@ -157,7 +159,8 @@ export default function Home() {
 							<li>1-3 people: 100 € / 85 € / 75 € / person</li>
 							<li>4+ people: 50 € / lesson / person</li>
 							<li>
-								15+ people: <Link href={mailto}>contact us</Link>
+								15+ people:{" "}
+								<EmailLink email={email}>contact us</EmailLink>
 							</li>
 						</ul>
 					</div>
@@ -185,7 +188,7 @@ export default function Home() {
 						</p>
 						<p className="text-sm text-zinc-500">
 							For special shapes, bulk orders, and custom temperatures,{" "}
-							<Link href={mailto}>contact us</Link>.
+							<EmailLink email={email}>contact us</EmailLink>.
 						</p>
 					</div>
 				</div>
@@ -204,7 +207,7 @@ export default function Home() {
 				</p>
 				<p>
 					Are you looking for work or volunteering opportunities, please{" "}
-					<Link href={mailto}>reach out to us</Link>.
+					<EmailLink email={email}>reach out</EmailLink>.
 				</p>
 			</section>
 
@@ -228,9 +231,7 @@ export default function Home() {
 							</li>
 							<li>
 								<EnvelopeIcon title="Email address" />{" "}
-								<ExternalLink href={mailto}>
-									contact@malinamore.studio
-								</ExternalLink>
+								<EmailLink email={email} />
 							</li>
 						</ul>
 					</div>
