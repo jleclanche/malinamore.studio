@@ -33,7 +33,7 @@ export default function Home() {
 				// add regular heading spacing
 				"[&>*>h1+*]:!mt-8",
 				"[&_ul]:pl-6 [&_ul]:py-2 [&_ul]:space-y-1 [&_ul.list-dash>li]:pl-1",
-				"[&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-4 md:[&_svg]:w-4 [&_svg]:inline"
+				"[&_svg]:h-5 [&_svg]:w-5 md:[&_svg]:h-4 md:[&_svg]:w-4 [&_svg]:inline",
 			)}
 		>
 			<section className="max-w-5xl py-5">
@@ -73,7 +73,7 @@ export default function Home() {
 				<div
 					className={clsx(
 						"flex flex-col md:flex-row items-center gap-x-8 gap-y-4 w-[125%] max-w-[125%] -ml-[12.5%]",
-						"child:flex child:items-center child:h-48 child:rounded-md child:object-cover"
+						"child:flex child:items-center child:h-48 child:rounded-md child:object-cover",
 					)}
 				>
 					<Image
@@ -153,7 +153,7 @@ export default function Home() {
 				<div
 					className={clsx(
 						"grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4",
-						"child:space-y-1 md:child:space-y-0.5"
+						"child:space-y-1 md:child:space-y-0.5",
 					)}
 				>
 					<div>
