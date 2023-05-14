@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ExternalLink from "../components/ExternalLink";
 
 const AboutPage = () => (
@@ -14,10 +13,9 @@ const AboutPage = () => (
 			</div>
 		</section>
 		<section className="max-w-7xl mt-10 px-6 lg:px-8">
-			<Image
+			<img
 				src="/images/photos/studio_inside.jpg"
 				className="rounded-lg w-3/4 mx-auto"
-				unoptimized
 				alt="Inside Malina More"
 			/>
 		</section>
