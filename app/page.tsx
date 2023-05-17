@@ -244,8 +244,8 @@ export default function Home() {
 					</div>
 					<div>
 						<h1 className="font-semibold text-xl">Opening hours</h1>
-							<li>Mon – sat: 13:00 – 18:00 (appointment required)</li>
 						<ul className="gap-y-1 text-zinc-200">
+							<li>Mon – Sat: 13:00 – 18:00 (appointment required)</li>
 							<li>
 								Sunday: <span className="line-through">closed</span>
 							</li>
