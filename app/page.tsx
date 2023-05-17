@@ -12,6 +12,11 @@ import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
 import EmailLink from "./components/EmailLink";
 import ExternalLink from "./components/ExternalLink";
 import Gallery from "./components/Gallery";
+import FullCircleIcon from "@/app/components/icons/fullCircleIcon";
+import HalfCircleIcon from "@/app/components/icons/halfCircleIcon";
+import QuarterCircleIcon from "@/app/components/icons/quarterCircleIcon";
+import TemperatureIcon from "@/app/components/icons/temperatureIcon";
+import KilnIcon from "@/app/components/icons/kilnIcon";
 
 const email = "contact@malinamore.studio";
 
