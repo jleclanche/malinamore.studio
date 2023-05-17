@@ -23,24 +23,24 @@ export default function Home() {
 	return (
 		<main className="flex flex-col items-center gap-10 overflow-x-hidden leading-7">
 			<section className="max-w-5xl py-5">
-				<p className="text-lg md:text-2xl font-medium text-zinc-500">
-					Art & Ceramics Studio in Brussels
-				</p>
-
-				{/* TODO: have the title to use Inter Display (2023-05-17: in beta) */}
-				<p className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter my-6">
-					Learn. Grow. Share.
-				</p>
-
-				<p>
-					Malina More Studio is a beautiful 180m<sup>2</sup> ceramics, arts &
-					crafts studio in Brussels, next to Anderlecht City Hall.
-				</p>
-				<p>
-					We host weekly ceramic classes, kiln rental, and can provide
-					co-working and event space. To find out more, contact us at{" "}
-					<EmailLink email={email} />.
-				</p>
+				<div className="px-[5%]">
+					<h1 className="text-lg md:text-2xl font-medium text-zinc-500">
+						Art & Ceramics Studio in Brussels
+					</h1>
+					{/* TODO: have the title to use Inter Display (2023-05-17: in beta) */}
+					<p className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter my-6">
+						Learn. Grow. Share.
+					</p>
+					<p>
+						Malina More Studio is a beautiful 180m<sup>2</sup> ceramics, arts &
+						crafts studio in Brussels, next to Anderlecht City Hall.
+					</p>
+					<p>
+						We host weekly ceramic classes, kiln rental, and can provide
+						co-working and event space. To find out more, contact us at{" "}
+						<EmailLink email={email} />.
+					</p>
+				</div>
 			</section>
 
 			<section className="max-w-2xl md:!py-0 text-center">
