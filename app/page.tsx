@@ -7,7 +7,6 @@ import {
 	ReceiptPercentIcon,
 } from "@heroicons/react/24/outline";
 import { MapPinIcon } from "@heroicons/react/24/solid";
-import clsx from "clsx";
 import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
 import EmailLink from "./components/EmailLink";
 import ExternalLink from "./components/ExternalLink";
