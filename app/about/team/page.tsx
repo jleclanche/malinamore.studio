@@ -1,7 +1,7 @@
 import ExternalLink from "@/app/components/ExternalLink";
-import InstagramLogo from "@/app/components/InstagramLogo";
-import LinkedInLogo from "@/app/components/LinkedInLogo";
-import WebsiteLogo from "@/app/components/WebsiteLogo";
+import InstagramLogo from "@/app/components/icons/InstagramLogo";
+import LinkedInLogo from "@/app/components/icons/LinkedInLogo";
+import WebsiteLogo from "@/app/components/icons/WebsiteLogo";
 
 const people = [
 	{
