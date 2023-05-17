@@ -209,7 +209,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="about" className="py-12 max-w-5xl">
+			<section id="about" className=" max-w-5xl">
 				<div className="px-[5%]">
 					<h1 className="font-bold text-2xl text-center mb-5">
 						About Malina More
