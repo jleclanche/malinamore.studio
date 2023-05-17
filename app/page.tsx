@@ -17,13 +17,7 @@ const email = "contact@malinamore.studio";
 
 export default function Home() {
 	return (
-		<main
-			className={clsx(
-				"flex flex-col items-center overflow-x-hidden",
-				"gap-10 leading-7",
-				"[&_a]:text-sky-500 [&_a:hover]:underline",
-			)}
-		>
+		<main className="flex flex-col items-center gap-10 overflow-x-hidden leading-7">
 			<section className="max-w-5xl py-5">
 				<p className="text-lg md:text-2xl font-medium text-zinc-500">
 					Art & Ceramics Studio in Brussels
@@ -226,35 +220,32 @@ export default function Home() {
 
 			<section
 				id="contact"
-				className="w-full !max-w-[100vw] bg-black text-white flex justify-center !px-0"
+				className="w-full bg-black text-white flex justify-center"
 			>
-				<div className="grid grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 w-full max-w-5xl p-5">
+				<div className="grid grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 w-full max-w-5xl px-[5%] py-8">
 					<div>
 						<h1 className="font-semibold text-xl">Find us</h1>
-						<ul className="text-zinc-200 child:flex child:items-center child:gap-x-2">
-							<li>
-								<MapPinIcon title="Address" className="w-5 h-5" />
+						<ul className="text-zinc-200">
+							<li className="flex items-center gap-x-2">
+								<MapPinIcon title="Address" />
 								<ExternalLink href="https://goo.gl/maps/cpYJ3jmpV7xyLUneA?coh=178571&entry=tt">
 									Rue Rossini 19, 1070 Anderlecht
 								</ExternalLink>
 							</li>
-							<li>
-								<MapIcon className="w-5 h-5" />
+							<li className="flex items-center gap-x-2">
+								<MapIcon />
 								Metro station: Clemenceau
 							</li>
-							<li>
-								<EnvelopeIcon
-									title="Email address"
-									className="w-5 h-5"
-								/>{" "}
+							<li className="flex items-center gap-x-2">
+								<EnvelopeIcon title="Email address" />{" "}
 								<EmailLink email={email} />
 							</li>
 						</ul>
 					</div>
 					<div>
 						<h1 className="font-semibold text-xl">Opening hours</h1>
-						<ul className="gap-y-1 text-zinc-200 !px-0">
 							<li>Mon – sat: 13:00 – 18:00 (appointment required)</li>
+						<ul className="gap-y-1 text-zinc-200">
 							<li>
 								Sunday: <span className="line-through">closed</span>
 							</li>
