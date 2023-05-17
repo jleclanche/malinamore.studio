@@ -1,5 +1,5 @@
-import ExternalLink from "./components/ExternalLink";
-import InstagramLogo from "./components/InstagramLogo";
+import ExternalLink from "@/app/components/ExternalLink";
+import InstagramLogo from "@/app/components/icons/InstagramLogo";
 
 const Footer = () => (
 	<footer className="bg-black text-zinc-400 text-sm flex justify-center py-8">
