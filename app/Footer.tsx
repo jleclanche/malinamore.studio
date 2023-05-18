@@ -1,5 +1,6 @@
 import ExternalLink from "@/app/components/ExternalLink";
 import InstagramLogo from "@/app/components/icons/InstagramLogo";
+import FacebookLogo from "./components/icons/FacebookLogo";
 
 const Footer = () => (
 	<footer className="bg-black text-zinc-400 text-sm flex justify-center py-8">
@@ -11,9 +12,12 @@ const Footer = () => (
 					<p>BCE 0800.279.001</p>
 				</div>
 			</div>
-			<div className="flex items-center">
+			<div className="flex items-center gap-3">
 				<ExternalLink href="https://instagram.com/malina_more_studio">
-					<InstagramLogo />
+					<InstagramLogo className="w-6 h-6" />
+				</ExternalLink>
+				<ExternalLink href="https://facebook.com/MalinaMoreStudio">
+					<FacebookLogo className="w-6 h-6" />
 				</ExternalLink>
 			</div>
 		</div>
