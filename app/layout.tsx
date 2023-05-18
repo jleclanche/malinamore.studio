@@ -18,10 +18,10 @@ export default function RootLayout({
 	params: { lang: string };
 }) {
 	return (
-		<html className="min-h-screen" lang={lang}>
-			<body className={`${inter.className} min-h-full`}>
+		<html lang={lang}>
+			<body className={`${inter.className} relative min-h-screen`}>
 				<Header />
-				{children}
+				<div>{children}</div>
 				<Footer />
 			</body>
 		</html>

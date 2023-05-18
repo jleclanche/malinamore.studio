@@ -4,7 +4,7 @@ import Link from "next/link";
 import FacebookLogo from "./components/icons/FacebookLogo";
 
 const Footer = () => (
-	<footer className="bg-black text-zinc-400 text-sm flex justify-center py-8">
+	<footer className="bg-black text-zinc-400 text-sm flex justify-center py-8 sticky top-[100vh]">
 		<div className="flex justify-between items-center flex-auto max-w-5xl px-[5%]">
 			<div className="flex space-x-1">
 				<span>©</span>
