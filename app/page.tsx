@@ -1,8 +1,12 @@
+import FullCircleIcon from "@/app/components/icons/fullCircleIcon";
+import HalfCircleIcon from "@/app/components/icons/halfCircleIcon";
+import KilnIcon from "@/app/components/icons/kilnIcon";
+import QuarterCircleIcon from "@/app/components/icons/quarterCircleIcon";
+import TemperatureIcon from "@/app/components/icons/temperatureIcon";
 import {
 	ClockIcon,
 	EnvelopeIcon,
 	InformationCircleIcon,
-	LanguageIcon,
 	MapIcon,
 	ReceiptPercentIcon,
 } from "@heroicons/react/24/outline";
@@ -11,11 +15,6 @@ import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
 import EmailLink from "./components/EmailLink";
 import ExternalLink from "./components/ExternalLink";
 import Gallery from "./components/Gallery";
-import FullCircleIcon from "@/app/components/icons/fullCircleIcon";
-import HalfCircleIcon from "@/app/components/icons/halfCircleIcon";
-import QuarterCircleIcon from "@/app/components/icons/quarterCircleIcon";
-import TemperatureIcon from "@/app/components/icons/temperatureIcon";
-import KilnIcon from "@/app/components/icons/kilnIcon";
 
 const email = "contact@malinamore.studio";
 
@@ -32,8 +31,8 @@ export default function Home() {
 						Learn. Grow. Share.
 					</p>
 					<p>
-						Malina More Studio is a beautiful 180m<sup>2</sup> ceramics, arts &
-						crafts studio in Brussels, next to Anderlecht City Hall.
+						Malina More Studio is a beautiful 180m<sup>2</sup> ceramics,
+						arts & crafts studio in Brussels, next to Anderlecht City Hall.
 					</p>
 					<p>
 						We host weekly ceramic classes, kiln rental, and can provide
@@ -219,9 +218,10 @@ export default function Home() {
 						sharing her admiration of art and her passion for porcelain.
 					</p>
 					<p className="mt-2">
-						Based in the Brussels Capital region and co-managed by Anna and her
-						partner Jerome, the ASBL&apos;s goals are to teach and showcase the
-						arts of ceramics, gravure, photography, and other fine arts.
+						Based in the Brussels Capital region and co-managed by Anna and
+						her partner Jerome, the ASBL&apos;s goals are to teach and
+						showcase the arts of ceramics, gravure, photography, and other
+						fine arts.
 					</p>
 					<p className="mt-2">
 						Are you looking for work or volunteering opportunities, please{" "}
@@ -256,10 +256,11 @@ export default function Home() {
 					</div>
 					<div>
 						<h1 className="font-semibold text-xl">Opening hours</h1>
+						<aside className="font-bold">By appointment only</aside>
 						<ul className="gap-y-1 text-zinc-200">
-							<li>Mon – Sat: 13:00 – 18:00 (appointment required)</li>
+							<li>Wed - Mon: 12:00 – 20:00</li>
 							<li>
-								Sunday: <span className="line-through">closed</span>
+								Tuesday: <span className="line-through">closed</span>
 							</li>
 						</ul>
 					</div>
