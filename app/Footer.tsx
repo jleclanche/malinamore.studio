@@ -1,5 +1,6 @@
 import ExternalLink from "@/app/components/ExternalLink";
 import InstagramLogo from "@/app/components/icons/InstagramLogo";
+import Link from "next/link";
 import FacebookLogo from "./components/icons/FacebookLogo";
 
 const Footer = () => (
@@ -12,6 +13,11 @@ const Footer = () => (
 					<p>BCE 0800.279.001</p>
 				</div>
 			</div>
+			<ul>
+				<li>
+					<Link href="/about/refund-policy">Refund policy</Link>
+				</li>
+			</ul>
 			<div className="flex items-center gap-3">
 				<ExternalLink href="https://instagram.com/malina_more_studio">
 					<InstagramLogo className="w-6 h-6" />
