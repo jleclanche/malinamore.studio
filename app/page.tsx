@@ -15,26 +15,24 @@ import { CONTACT_EMAIL } from "./constants";
 
 export default function Home() {
 	return (
-		<main className="flex flex-col items-center gap-10 overflow-x-hidden leading-7">
-			<section className="max-w-5xl py-5">
-				<div className="px-[5%]">
-					<h1 className="text-lg md:text-2xl font-medium text-zinc-500">
-						Art & Ceramics Studio in Brussels
-					</h1>
-					{/* TODO: have the title to use Inter Display (2023-05-17: in beta) */}
-					<p className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter my-6">
-						Learn. Grow. Share.
-					</p>
-					<p>
-						Malina More Studio is a beautiful 180m<sup>2</sup> ceramics,
-						arts & crafts studio in Brussels, next to Anderlecht City Hall.
-					</p>
-					<p>
-						We host weekly ceramic classes, kiln rental, and can provide
-						co-working and event space. To find out more, contact us at{" "}
-						<EmailLink email={CONTACT_EMAIL} />.
-					</p>
-				</div>
+		<main className="flex flex-col items-center gap-10 overflow-x-hidden leading-7 py-10">
+			<section className="max-w-5xl px-10">
+				<h1 className="text-lg md:text-2xl font-medium text-zinc-500">
+					Art & Ceramics Studio in Brussels
+				</h1>
+				{/* TODO: have the title to use Inter Display (2023-05-17: in beta) */}
+				<p className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter my-6">
+					Learn. Grow. Share.
+				</p>
+				<p>
+					Malina More Studio is a beautiful 180m<sup>2</sup> ceramics, arts &
+					crafts studio in Brussels, next to Anderlecht City Hall.
+				</p>
+				<p>
+					We host weekly ceramic classes, kiln rental, and can provide
+					co-working and event space. To find out more, contact us at{" "}
+					<EmailLink email={CONTACT_EMAIL} />.
+				</p>
 			</section>
 
 			<section className="max-w-2xl md:!py-0 text-center">
@@ -61,7 +59,7 @@ export default function Home() {
 			</section>
 
 			<section id="our-classes" className="bg-zinc-100 w-full py-5">
-				<div className="flex flex-col gap-5 px-[5%]">
+				<div className="flex flex-col gap-5 px-10">
 					<h1 className="font-bold text-2xl text-center">Our classes</h1>
 					<div className="flex flex-col gap-y-1.5 max-w-5xl mx-auto">
 						<p>
@@ -204,7 +202,7 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section id="about" className=" max-w-5xl">
+			<section id="about" className="max-w-5xl">
 				<div className="px-[5%]">
 					<h1 className="font-bold text-2xl text-center mb-5">
 						About Malina More
