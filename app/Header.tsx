@@ -1,35 +1,23 @@
 import Link from "next/link";
 
-const navigation = [
-	{
-		title: "Services",
-		href: "#what-we-do",
-	},
-	{
-		title: "About",
-		href: "/about",
-	},
-	{
-		title: "Team",
-		href: "/about/team",
-	},
-	{
-		title: "Contact",
-		href: "#contact",
-	},
-];
-
 const Header = () => (
 	<header className="flex justify-between flex-wrap gap-y-4 bg-black text-white p-6">
 		<span className="uppercase font-bold tracking-wider">
 			<Link href="/">Malina More Studio</Link>
 		</span>
 		<nav className="space-x-4">
-			{navigation.map((item) => (
-				<Link className="font-medium" key={item.title} href={item.href}>
-					{item.title}
-				</Link>
-			))}
+			<Link className="font-medium" href="/#services">
+				Services
+			</Link>
+			<Link className="font-medium" href="/about">
+				About
+			</Link>
+			<Link className="font-medium" href="/about/team">
+				Team
+			</Link>
+			<Link className="font-medium" href="/#contact">
+				Contact
+			</Link>
 		</nav>
 	</header>
 );
