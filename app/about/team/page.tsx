@@ -23,12 +23,6 @@ const people = [
 		image: "/images/team/daria.jpg",
 		linkedin: "https://www.linkedin.com/in/daria-shcherbak-56747a102",
 	},
-	{
-		name: "Joella Priam",
-		role: "Coordinator",
-		image: "/images/team/joella.jpg",
-		linkedin: "https://www.linkedin.com/in/joella-priam",
-	},
 ];
 
 const TeamPage = () => (
