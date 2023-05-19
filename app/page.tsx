@@ -5,18 +5,13 @@ import QuarterCircleIcon from "@/app/components/icons/quarterCircleIcon";
 import TemperatureIcon from "@/app/components/icons/temperatureIcon";
 import {
 	ClockIcon,
-	EnvelopeIcon,
 	InformationCircleIcon,
-	MapIcon,
 	ReceiptPercentIcon,
 } from "@heroicons/react/24/outline";
-import { MapPinIcon } from "@heroicons/react/24/solid";
 import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
 import EmailLink from "./components/EmailLink";
-import ExternalLink from "./components/ExternalLink";
 import Gallery from "./components/Gallery";
-
-const email = "contact@malinamore.studio";
+import { CONTACT_EMAIL } from "./constants";
 
 export default function Home() {
 	return (
@@ -37,7 +32,7 @@ export default function Home() {
 					<p>
 						We host weekly ceramic classes, kiln rental, and can provide
 						co-working and event space. To find out more, contact us at{" "}
-						<EmailLink email={email} />.
+						<EmailLink email={CONTACT_EMAIL} />.
 					</p>
 				</div>
 			</section>
@@ -81,9 +76,10 @@ export default function Home() {
 							coffee. Members get 20% off all lessons!
 						</p>
 						<p>
-							<EmailLink email={email}>Contact us</EmailLink> to book a
-							class. For on-demand classes, please book at least 5 days in
-							advance. Classes are available in English and French.
+							<EmailLink email={CONTACT_EMAIL}>Contact us</EmailLink> to
+							book a class. For on-demand classes, please book at least 5
+							days in advance. Classes are available in English and
+							French.
 						</p>
 					</div>
 					<div className="grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 max-w-5xl mx-auto">
@@ -201,7 +197,7 @@ export default function Home() {
 								will be able to pick up your piece the following Monday.
 								For special shapes, bulk orders, and custom
 								temperatures,{" "}
-								<EmailLink email={email}>contact us</EmailLink>.
+								<EmailLink email={CONTACT_EMAIL}>contact us</EmailLink>.
 							</p>
 						</div>
 					</div>
@@ -225,45 +221,8 @@ export default function Home() {
 					</p>
 					<p className="mt-2">
 						Are you looking for work or volunteering opportunities, please{" "}
-						<EmailLink email={email}>reach out</EmailLink>.
+						<EmailLink email={CONTACT_EMAIL}>reach out</EmailLink>.
 					</p>
-				</div>
-			</section>
-
-			<section
-				id="contact"
-				className="w-full bg-black text-white flex justify-center"
-			>
-				<div className="grid grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 w-full max-w-5xl px-[5%] py-8">
-					<div>
-						<h1 className="font-semibold text-xl">Find us</h1>
-						<ul className="text-zinc-200">
-							<li className="flex items-center gap-x-2">
-								<MapPinIcon title="Address" />
-								<ExternalLink href="https://goo.gl/maps/cpYJ3jmpV7xyLUneA?coh=178571&entry=tt">
-									Rue Rossini 19, 1070 Anderlecht
-								</ExternalLink>
-							</li>
-							<li className="flex items-center gap-x-2">
-								<MapIcon />
-								Metro station: Clemenceau
-							</li>
-							<li className="flex items-center gap-x-2">
-								<EnvelopeIcon title="Email address" />{" "}
-								<EmailLink email={email} />
-							</li>
-						</ul>
-					</div>
-					<div>
-						<h1 className="font-semibold text-xl">Opening hours</h1>
-						<aside className="font-bold">By appointment only</aside>
-						<ul className="gap-y-1 text-zinc-200">
-							<li>Wed - Mon: 12:00 – 20:00</li>
-							<li>
-								Tuesday: <span className="line-through">closed</span>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</section>
 		</main>
