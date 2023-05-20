@@ -1,6 +1,7 @@
 import { ClockIcon } from "@heroicons/react/24/outline";
 import EmailLink from "../components/EmailLink";
-import { CONTACT_EMAIL } from "../constants";
+import ExternalLink from "../components/ExternalLink";
+import { CALENDAR_LINK, CONTACT_EMAIL } from "../constants";
 
 const OurClasses = () => (
 	<div className="flex flex-col gap-5 px-10">
@@ -61,6 +62,12 @@ const OurClasses = () => (
 				</ul>
 			</div>
 		</div>
+		<ExternalLink
+			href={CALENDAR_LINK}
+			className="mx-auto w-fit text-white bg-green-700 px-5 py-2 rounded-md shadow-md hover:bg-green-600 hover:no-underline"
+		>
+			Book a class
+		</ExternalLink>
 	</div>
 );
 
