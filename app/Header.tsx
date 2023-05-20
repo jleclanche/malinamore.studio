@@ -12,6 +12,9 @@ const Header = () => (
 			<Link className="font-medium" href="/#services">
 				Services
 			</Link>
+			<Link className="font-medium" href="/memberships">
+				Memberships
+			</Link>
 			<Link className="font-medium" href="/about">
 				About
 			</Link>
