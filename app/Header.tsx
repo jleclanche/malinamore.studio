@@ -6,6 +6,9 @@ const Header = () => (
 			<Link href="/">Malina More Studio</Link>
 		</span>
 		<nav className="space-x-4">
+			<Link className="font-medium" href="/classes">
+				Classes
+			</Link>
 			<Link className="font-medium" href="/#services">
 				Services
 			</Link>
