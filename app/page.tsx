@@ -3,12 +3,9 @@ import HalfCircleIcon from "@/app/components/icons/halfCircleIcon";
 import KilnIcon from "@/app/components/icons/kilnIcon";
 import QuarterCircleIcon from "@/app/components/icons/quarterCircleIcon";
 import TemperatureIcon from "@/app/components/icons/temperatureIcon";
-import {
-	ClockIcon,
-	InformationCircleIcon,
-	ReceiptPercentIcon,
-} from "@heroicons/react/24/outline";
+import { InformationCircleIcon, ReceiptPercentIcon } from "@heroicons/react/24/outline";
 import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
+import OurClasses from "./classes/OurClasses";
 import EmailLink from "./components/EmailLink";
 import Gallery from "./components/Gallery";
 import { CONTACT_EMAIL } from "./constants";
@@ -59,67 +56,7 @@ export default function Home() {
 			</section>
 
 			<section id="our-classes" className="bg-zinc-100 w-full py-5">
-				<div className="flex flex-col gap-5 px-10">
-					<h1 className="font-bold text-2xl text-center">Our classes</h1>
-					<div className="flex flex-col gap-y-1.5 max-w-5xl mx-auto">
-						<p>
-							<strong>Discover the art of ceramics with Anna!</strong>{" "}
-							Talented ceramist with 13 years of practice and 7 years of
-							experience teaching the art, you will learn from the best in
-							the craft.
-						</p>
-						<p>
-							Each lesson lasts around two-and-a-half hours and includes
-							1kg of clay per person, equipment, and complimentary tea or
-							coffee. Members get 20% off all lessons!
-						</p>
-						<p>
-							<EmailLink email={CONTACT_EMAIL}>Contact us</EmailLink> to
-							book a class. For on-demand classes, please book at least 5
-							days in advance. Classes are available in English and
-							French.
-						</p>
-					</div>
-					<div className="grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 max-w-5xl mx-auto">
-						<div>
-							<p className="font-bold text-lg">Group lessons</p>
-							<ul className="list-dash pl-4 space-y-1 mt-2">
-								<li>
-									Free-style ceramics: 40 €
-									<span className="block text-sm text-zinc-500">
-										weekly, good for beginners
-									</span>
-								</li>
-								<li>
-									Introduction to ceramics: 45 €
-									<span className="block text-sm text-zinc-500">
-										monthly, 10 spots
-									</span>
-								</li>
-								<li>
-									Introduction to glazing: 50 €
-									<span className="block text-sm text-zinc-500">
-										monthly, 10 spots
-									</span>
-								</li>
-								<li>More coming soon!</li>
-							</ul>
-							<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
-								<ClockIcon /> Our weekly group lessons begin in June!
-							</p>
-						</div>
-						<div>
-							<p className="font-bold text-lg">On-demand classes</p>
-							<ul className="list-dash pl-4  mt-2">
-								<li>1 person: 100 € / lesson</li>
-								<li>2 people: 85 € / lesson / person</li>
-								<li>3 people: 75 € / lesson / person</li>
-								<li>4+ people: 50 € / lesson / person</li>
-								<li>10+ people & birthdays: custom prices available</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+				<OurClasses />
 			</section>
 
 			<section id="what-we-do" className="bg-zinc-100 w-full py-5">
