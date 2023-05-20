@@ -16,10 +16,10 @@ const Header = () => (
 				Memberships
 			</Link>
 			<Link className="font-medium" href="/about">
-				About
+				About us
 			</Link>
 			<Link className="font-medium" href="/about/team">
-				Team
+				Our team
 			</Link>
 		</nav>
 	</header>
