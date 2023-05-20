@@ -18,9 +18,6 @@ const Header = () => (
 			<Link className="font-medium" href="/about/team">
 				Team
 			</Link>
-			<Link className="font-medium" href="/#contact">
-				Contact
-			</Link>
 		</nav>
 	</header>
 );
