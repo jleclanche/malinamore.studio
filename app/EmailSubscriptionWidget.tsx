@@ -47,6 +47,7 @@ const EmailSubscriptionWidget = () => {
 										autoComplete="email"
 										placeholder="email@example.com"
 										className="flex-[3] bg-gray-200 p-3 rounded-md"
+										required
 									/>
 									<button
 										type="submit"
