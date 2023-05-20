@@ -59,7 +59,7 @@ export default function Home() {
 				<OurClasses />
 			</section>
 
-			<section id="what-we-do" className="bg-zinc-100 w-full py-5">
+			<section id="services" className="bg-zinc-100 w-full py-5">
 				<div className="px-[5%]">
 					<h1 className="max-w-5xl font-bold text-2xl text-center mx-auto mb-5">
 						Other services available
