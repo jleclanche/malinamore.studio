@@ -4,6 +4,7 @@ import { EnvelopeIcon, MapIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import EmailLink from "./components/EmailLink";
 import FacebookLogo from "./components/icons/FacebookLogo";
+import MeetupLogo from "./components/icons/MeetupLogo";
 import { CONTACT_EMAIL } from "./constants";
 
 const Footer = () => (
@@ -65,6 +66,9 @@ const Footer = () => (
 					</ExternalLink>
 					<ExternalLink href="https://facebook.com/MalinaMoreStudio">
 						<FacebookLogo className="w-6 h-6" />
+					</ExternalLink>
+					<ExternalLink href="https://meetup.com/Malina-More">
+						<MeetupLogo className="w-6 h-6" />
 					</ExternalLink>
 				</div>
 			</div>
