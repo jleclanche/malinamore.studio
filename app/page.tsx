@@ -31,8 +31,17 @@ export default function Home() {
 					co-working and event space.
 				</p>
 				<p>
-					You can reach us at <EmailLink email={CONTACT_EMAIL} /> or{" "}
-					<TelLink phoneNumber={CONTACT_PHONE} /> if you have any questions.
+					You can reach us at{" "}
+					<EmailLink
+						email={CONTACT_EMAIL}
+						className="text-sky-500 hover:underline"
+					/>{" "}
+					or{" "}
+					<TelLink
+						phoneNumber={CONTACT_PHONE}
+						className="text-sky-500 hover:underline"
+					/>{" "}
+					if you have any questions.
 				</p>
 			</section>
 

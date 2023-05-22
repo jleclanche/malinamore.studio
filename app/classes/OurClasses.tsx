@@ -18,38 +18,52 @@ const OurClasses = () => (
 				20% off all lessons!
 			</p>
 			<p>
-				<EmailLink email={CONTACT_EMAIL}>Contact us</EmailLink> to book a class.
-				For private lessons, please book at least 5 days in advance. Classes are
-				available in English, French and Russian.
+				<EmailLink
+					email={CONTACT_EMAIL}
+					className="text-sky-500 hover:underline"
+				>
+					Contact us
+				</EmailLink>{" "}
+				to book a class. For private lessons, please book at least 5 days in
+				advance. Classes are available in English, French and Russian.
 			</p>
 		</div>
 		<div className="grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 max-w-5xl mx-auto">
 			<div>
 				<p className="font-bold text-lg">Group lessons</p>
-				<ul className="list-dash pl-4 space-y-1 mt-2">
-					<li>
-						Free-style ceramics: 40 €
-						<span className="block text-sm text-zinc-500">
-							weekly, good for beginners
-						</span>
-					</li>
-					<li>
-						Introduction to ceramics: 45 €
-						<span className="block text-sm text-zinc-500">
-							monthly, 10 spots
-						</span>
-					</li>
-					<li>
-						Introduction to glazing: 50 €
-						<span className="block text-sm text-zinc-500">
-							monthly, 10 spots
-						</span>
-					</li>
-					<li>More coming soon!</li>
-				</ul>
 				<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
 					<ClockIcon /> Our weekly group lessons begin in June!
 				</p>
+				<ul className="list-dash pl-4 space-y-1 mt-2">
+					<li>
+						<ExternalLink
+							href="https://cal.com/malina-more/fall-in-love-with-clay"
+							className="text-sky-500 hover:underline"
+						>
+							Fall in Love with Clay (65 €)
+						</ExternalLink>
+						<span className="block text-sm text-zinc-500">
+							Every 2 weeks, best for beginners
+						</span>
+					</li>
+					<li>
+						<ExternalLink
+							href="https://cal.com/malina-more/free-style-ceramics"
+							className="text-sky-500 hover:underline"
+						>
+							Free-style ceramics (40 €)
+						</ExternalLink>
+						<span className="block text-sm text-zinc-500">
+							Weekly, beginner-friendly
+						</span>
+					</li>
+					<li>
+						Introduction to glazing (50 €)
+						<span className="block text-sm text-zinc-500">
+							Advanced. Coming soon.
+						</span>
+					</li>
+				</ul>
 			</div>
 			<div>
 				<p className="font-bold text-lg">On-demand classes</p>
