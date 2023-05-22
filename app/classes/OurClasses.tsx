@@ -13,14 +13,14 @@ const OurClasses = () => (
 				the art, you will learn from the best in the craft.
 			</p>
 			<p>
-				Each lesson lasts around two-and-a-half hours and includes 1kg of clay
-				per person, equipment, and complimentary tea or coffee. Members get 20%
-				off all lessons!
+				Each lesson lasts around two-and-a-half hours and includes up to 1kg of
+				clay per person, equipment, and complimentary tea or coffee. Members get
+				20% off all lessons!
 			</p>
 			<p>
 				<EmailLink email={CONTACT_EMAIL}>Contact us</EmailLink> to book a class.
-				For on-demand classes, please book at least 5 days in advance. Classes
-				are available in English and French.
+				For private lessons, please book at least 5 days in advance. Classes are
+				available in English, French and Russian.
 			</p>
 		</div>
 		<div className="grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 max-w-5xl mx-auto">

@@ -8,7 +8,8 @@ import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
 import OurClasses from "./classes/OurClasses";
 import EmailLink from "./components/EmailLink";
 import Gallery from "./components/Gallery";
-import { CONTACT_EMAIL } from "./constants";
+import TelLink from "./components/TelLink";
+import { CONTACT_EMAIL, CONTACT_PHONE } from "./constants";
 
 export default function Home() {
 	return (
@@ -26,9 +27,12 @@ export default function Home() {
 					crafts studio in Brussels, next to Anderlecht City Hall.
 				</p>
 				<p>
-					We host weekly ceramic classes, kiln rental, and can provide
-					co-working and event space. To find out more, contact us at{" "}
-					<EmailLink email={CONTACT_EMAIL} />.
+					We host weekly ceramic classes and offer kiln rentals as well as
+					co-working and event space.
+				</p>
+				<p>
+					You can reach us at <EmailLink email={CONTACT_EMAIL} /> or{" "}
+					<TelLink phoneNumber={CONTACT_PHONE} /> if you have any questions.
 				</p>
 			</section>
 
@@ -60,7 +64,7 @@ export default function Home() {
 			</section>
 
 			<section id="services" className="bg-zinc-100 w-full py-5">
-				<div className="px-[5%]">
+				<div className="px-10">
 					<h1 className="max-w-5xl font-bold text-2xl text-center mx-auto mb-5">
 						Other services available
 					</h1>
@@ -136,28 +140,6 @@ export default function Home() {
 							</p>
 						</div>
 					</div>
-				</div>
-			</section>
-
-			<section id="about" className="max-w-5xl">
-				<div className="px-[5%]">
-					<h1 className="font-bold text-2xl text-center mb-5">
-						About Malina More
-					</h1>
-					<p className="mt-2">
-						Malina More ASBL was founded by Anna Radovenchik, by her wish of
-						sharing her admiration of art and her passion for porcelain.
-					</p>
-					<p className="mt-2">
-						Based in the Brussels Capital region and co-managed by Anna and
-						her partner Jerome, the ASBL&apos;s goals are to teach and
-						showcase the arts of ceramics, gravure, photography, and other
-						fine arts.
-					</p>
-					<p className="mt-2">
-						Are you looking for work or volunteering opportunities, please{" "}
-						<EmailLink email={CONTACT_EMAIL}>reach out</EmailLink>.
-					</p>
 				</div>
 			</section>
 		</main>
