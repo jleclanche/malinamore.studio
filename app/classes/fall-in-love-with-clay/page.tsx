@@ -3,7 +3,7 @@ import ExternalLink from "@/app/components/ExternalLink";
 const BookNow = () => (
 	<div className="flex justify-center">
 		<ExternalLink
-			href="https://cal.com/malina-more/fall-in-love-with-clay"
+			href="https://cal.com/malina-more/fall-in-love-with-clay?duration=150&month=2023-06&date=2023-06-04"
 			className="w-fit text-white bg-green-700 px-5 py-2 rounded-md shadow-md hover:bg-green-600 no-underline"
 		>
 			Book now (65 €)
