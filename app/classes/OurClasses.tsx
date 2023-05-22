@@ -1,4 +1,5 @@
 import { ClockIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 import EmailLink from "../components/EmailLink";
 import ExternalLink from "../components/ExternalLink";
 import { CALENDAR_LINK, CONTACT_EMAIL } from "../constants";
@@ -36,12 +37,12 @@ const OurClasses = () => (
 				</p>
 				<ul className="list-dash pl-4 space-y-1 mt-2">
 					<li>
-						<ExternalLink
-							href="https://cal.com/malina-more/fall-in-love-with-clay"
+						<Link
+							href="/classes/fall-in-love-with-clay"
 							className="text-sky-500 hover:underline"
 						>
 							Fall in Love with Clay (65 €)
-						</ExternalLink>
+						</Link>
 						<span className="block text-sm text-zinc-500">
 							Every 2 weeks, best for beginners
 						</span>
@@ -67,7 +68,7 @@ const OurClasses = () => (
 			</div>
 			<div>
 				<p className="font-bold text-lg">On-demand classes</p>
-				<ul className="list-dash pl-4  mt-2">
+				<ul className="list-dash pl-4 mt-2">
 					<li>1 person: 100 € / lesson</li>
 					<li>2 people: 85 € / lesson / person</li>
 					<li>3 people: 75 € / lesson / person</li>
