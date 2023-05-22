@@ -1,3 +1,16 @@
+import ExternalLink from "@/app/components/ExternalLink";
+
+const BookNow = () => (
+	<div className="flex justify-center">
+		<ExternalLink
+			href="https://cal.com/malina-more/fall-in-love-with-clay"
+			className="w-fit text-white bg-green-700 px-5 py-2 rounded-md shadow-md hover:bg-green-600 no-underline"
+		>
+			Book now (65 €)
+		</ExternalLink>
+	</div>
+);
+
 const Page = () => (
 	<article className="p-10 mx-auto prose">
 		<h1>Fall in Love with Clay</h1>
@@ -18,7 +31,9 @@ const Page = () => (
 
 		<p>Lesson is followed by 30 min networking session with drinks included.</p>
 
-		<div className="grid grid-cols-4 col-span-2  gap-2">
+		<BookNow />
+
+		<div className="grid grid-cols-4 col-span-2 gap-2 mb-10">
 			<div className=" overflow-hidden rounded-xl col-span-2 max-h-[14rem]">
 				<img
 					className="h-full w-full rounded-xl object-cover"
@@ -41,6 +56,7 @@ const Page = () => (
 				/>
 			</div>
 		</div>
+		<BookNow />
 	</article>
 );
 
