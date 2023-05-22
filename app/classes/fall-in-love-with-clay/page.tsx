@@ -30,6 +30,12 @@ const Page = () => (
 		</p>
 
 		<p>Lesson is followed by 30 min networking session with drinks included.</p>
+		<p>
+			<em>
+				Note: If you wish to pay by cash the day of the workshop, please send us
+				an email so we can book you.
+			</em>
+		</p>
 
 		<BookNow />
 
