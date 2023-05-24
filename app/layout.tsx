@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import Footer from "./Footer";
 import Header from "./Header";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,6 +20,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang={lang}>
+			<GoogleAnalytics />
 			<body className={`${inter.className} relative min-h-screen`}>
 				<Header />
 				<div>{children}</div>
