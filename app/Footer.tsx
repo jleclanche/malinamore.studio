@@ -1,11 +1,17 @@
 import ExternalLink from "@/app/components/ExternalLink";
 import InstagramLogo from "@/app/components/icons/InstagramLogo";
-import { EnvelopeIcon, MapIcon, MapPinIcon } from "@heroicons/react/24/outline";
+import {
+	EnvelopeIcon,
+	MapIcon,
+	MapPinIcon,
+	PhoneIcon,
+} from "@heroicons/react/24/outline";
 import Link from "next/link";
 import EmailLink from "./components/EmailLink";
+import TelLink from "./components/TelLink";
 import FacebookLogo from "./components/icons/FacebookLogo";
 import MeetupLogo from "./components/icons/MeetupLogo";
-import { CONTACT_EMAIL } from "./constants";
+import { CONTACT_EMAIL, CONTACT_PHONE } from "./constants";
 
 const Footer = () => (
 	<footer className="bg-black text-zinc-400 text-sm py-8 sticky top-[100vh]">
@@ -30,6 +36,12 @@ const Footer = () => (
 						<li className="flex items-center gap-x-2">
 							<EnvelopeIcon title="Email address" />{" "}
 							<EmailLink email={CONTACT_EMAIL} />
+						</li>
+						<li className="flex items-center gap-x-2">
+							<PhoneIcon title="Email address" />{" "}
+							<TelLink phoneNumber={CONTACT_PHONE}>
+								{CONTACT_PHONE}
+							</TelLink>
 						</li>
 					</ul>
 				</div>
