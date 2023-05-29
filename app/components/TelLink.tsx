@@ -5,8 +5,8 @@ export const TelLink: React.FC<{
 	className?: string;
 	children?: React.ReactNode | React.ReactNode[];
 }> = ({ phoneNumber, className, children }) => (
-	<ExternalLink href={`tel:${phoneNumber}`} className={className}>
-		{children || phoneNumber.replaceAll(" ", "")}
+	<ExternalLink href={`tel:${phoneNumber.replaceAll(" ", "")}`} className={className}>
+		{children || phoneNumber}
 	</ExternalLink>
 );
 
