@@ -73,7 +73,7 @@ export default function RootLayout({
 	params: { lang: string };
 }) {
 	return (
-		<html lang={lang}>
+		<html lang="en">
 			<head>
 				<GoogleAnalytics />
 			</head>
