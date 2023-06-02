@@ -14,7 +14,7 @@ const AboutPage = () => (
 		</section>
 		<section className="max-w-7xl mt-10 px-6 lg:px-8">
 			<img
-				src="/images/photos/studio_inside.jpg"
+				src="/images/photos/opening_party.jpg"
 				className="rounded-lg w-3/4 mx-auto"
 				alt="Inside Malina More"
 			/>
