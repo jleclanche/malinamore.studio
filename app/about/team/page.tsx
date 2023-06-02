@@ -13,7 +13,7 @@ const people = [
 	{
 		name: "Jerome Leclanche",
 		role: "Treasurer • Administrator",
-		image: "/images/team/jerome.png",
+		image: "/images/team/jerome.jpg",
 		website: "https://leclan.ch",
 		linkedin: "https://www.linkedin.com/in/jleclanche",
 	},
