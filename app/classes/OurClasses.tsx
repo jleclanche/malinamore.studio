@@ -33,29 +33,18 @@ const OurClasses = () => (
 			<div>
 				<p className="font-bold text-lg">Group lessons</p>
 				<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
-					<ClockIcon /> Our weekly group lessons begin in June!
+					<ClockIcon /> Next group lesson on June 11!
 				</p>
 				<ul className="list-dash pl-4 space-y-1 mt-2">
 					<li>
 						<Link
-							href="/classes/fall-in-love-with-clay"
+							href="/classes/ceramics-for-fathers-day"
 							className="text-sky-500 hover:underline"
 						>
-							Fall in Love with Clay (65 €)
+							Ceramics for Fathers Day (55 €)
 						</Link>
 						<span className="block text-sm text-zinc-500">
-							Every 2 weeks, best for beginners
-						</span>
-					</li>
-					<li>
-						<ExternalLink
-							href="https://cal.com/malina-more/free-style-ceramics"
-							className="text-sky-500 hover:underline"
-						>
-							Free-style ceramics (40 €)
-						</ExternalLink>
-						<span className="block text-sm text-zinc-500">
-							Weekly, beginner-friendly
+							Beginner-friendly. Special price!
 						</span>
 					</li>
 					<li>
