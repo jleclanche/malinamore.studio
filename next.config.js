@@ -24,6 +24,10 @@ const nextConfig = {
 				source: "/r/instagram",
 				destination: "https://instagram.com/malina_more_studio",
 			},
+			{
+				source: "/classes/ceramics-for-fathers-day",
+				destination: "/classes/fall-in-love-with-clay",
+			}
 		];
 	},
 	experimental: {

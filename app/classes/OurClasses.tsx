@@ -33,18 +33,18 @@ const OurClasses = () => (
 			<div>
 				<p className="font-bold text-lg">Group lessons</p>
 				<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
-					<ClockIcon /> Next group lesson on June 11!
+					<ClockIcon /> Next group lesson on July 2nd!
 				</p>
 				<ul className="list-dash pl-4 space-y-1 mt-2">
 					<li>
 						<Link
-							href="/classes/ceramics-for-fathers-day"
+							href="/classes/fall-in-love-with-clay"
 							className="text-sky-500 hover:underline"
 						>
-							Ceramics for Fathers Day (55 €)
+							Fall in Love with Clay (65 €)
 						</Link>
 						<span className="block text-sm text-zinc-500">
-							Beginner-friendly. Special price!
+							Beginner-friendly. Gift cards available!
 						</span>
 					</li>
 					<li>

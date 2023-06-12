@@ -3,10 +3,21 @@ import ExternalLink from "@/app/components/ExternalLink";
 const BookNow = () => (
 	<div className="flex justify-center">
 		<ExternalLink
-			href="https://cal.com/malina-more/fall-in-love-with-clay?duration=150&month=2023-06&date=2023-06-04"
+			href="https://cal.com/malina-more/fall-in-love-with-clay?duration=150&month=2023-07&date=2023-07-02"
 			className="w-fit text-white bg-green-700 px-5 py-2 rounded-md shadow-md hover:bg-green-600 no-underline"
 		>
 			Book now (65 €)
+		</ExternalLink>
+	</div>
+);
+
+const BuyAsGift = () => (
+	<div className="flex justify-center">
+		<ExternalLink
+			href="https://buy.stripe.com/5kA3eUbAw03nbzW3cc"
+			className="w-fit text-white bg-green-700 px-5 py-2 rounded-md shadow-md hover:bg-green-600 no-underline"
+		>
+			Buy as a Gift Card (65 €)
 		</ExternalLink>
 	</div>
 );
@@ -38,6 +49,17 @@ const Page = () => (
 		</p>
 
 		<BookNow />
+
+		<h2>Buy a gift card</h2>
+
+		<p>
+			You can buy a ceramics lesson as a gift card! The gift card is valid for any
+			lesson within 6 months after its purchase.
+		</p>
+
+		<div className="flex gap-3 justify-center">
+			<BuyAsGift />
+		</div>
 
 		<div className="grid grid-cols-4 col-span-2 gap-2 mb-10">
 			<div className=" overflow-hidden rounded-xl col-span-2 max-h-[14rem]">
