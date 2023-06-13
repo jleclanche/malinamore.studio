@@ -1,4 +1,5 @@
 import ExternalLink from "@/app/components/ExternalLink";
+import { ClockIcon } from "@heroicons/react/24/outline";
 
 const BookNow = () => (
 	<div className="flex justify-center">
@@ -25,6 +26,9 @@ const BuyAsGift = () => (
 const Page = () => (
 	<article className="p-10 mx-auto prose">
 		<h1>Fall in Love with Clay</h1>
+		<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
+			<ClockIcon /> Next group lesson on <strong>July 2nd</strong>!
+		</p>
 		<p>
 			<strong>Beginner-friendly lesson (In English).</strong> In this 2 hour
 			session, you will be given 500g of clay and Anna will teach you how to make
