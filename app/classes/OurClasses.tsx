@@ -61,7 +61,15 @@ const OurClasses = () => (
 					<li>1 person: 100 € / lesson</li>
 					<li>2-3 people: 75 € / lesson / person</li>
 					<li>4+ people: 55 € / lesson / person</li>
-					<li>10+ people & birthdays: custom prices available</li>
+					<li>
+						Large groups:{" "}
+						<Link
+							href="/classes/teambuilding-ceramics"
+							className="text-sky-500 hover:underline"
+						>
+							Custom Prices available
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</div>
