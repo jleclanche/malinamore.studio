@@ -32,7 +32,7 @@ const Page = () => (
 		<p>
 			<strong>Beginner-friendly lesson (In English).</strong> In this 2 hour
 			session, you will be given 500g of clay and Anna will teach you how to make
-			the plate/bowl/cup of your dreams.
+			the plate or bowl of your dreams.
 		</p>
 		<p>
 			Lesson themes: Hand-build ceramic dishes, learn to model clay, work with
