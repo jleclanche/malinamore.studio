@@ -4,7 +4,7 @@ import { ClockIcon } from "@heroicons/react/24/outline";
 const BookNow = () => (
 	<div className="flex justify-center">
 		<ExternalLink
-			href="https://cal.com/malina-more/fall-in-love-with-clay?duration=150&month=2023-07&date=2023-07-02"
+			href="https://cal.com/malina-more/fall-in-love-with-clay?duration=150&month=2023-07&date=2023-07-23"
 			className="w-fit text-white bg-green-700 px-5 py-2 rounded-md shadow-md hover:bg-green-600 no-underline"
 		>
 			Book now (65 €)
@@ -27,7 +27,8 @@ const Page = () => (
 	<article className="p-10 mx-auto prose">
 		<h1>Fall in Love with Clay</h1>
 		<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
-			<ClockIcon /> Next group lesson on <strong>July 2nd</strong>!
+			<ClockIcon /> Next group lesson on <strong>July 23rd</strong> and{" "}
+			<strong>August 6th</strong>!
 		</p>
 		<p>
 			<strong>Beginner-friendly lesson (In English).</strong> In this 2 hour
