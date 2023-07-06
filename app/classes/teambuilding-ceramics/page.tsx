@@ -46,9 +46,9 @@ const Page = () => (
 			Our ceramics workshop can accommodate groups of up to 30 people, making it a
 			perfect choice for teams large and small. The instructor will handle the
 			final glazing and both kiln firings, and the creations will be ready for
-			pickup within three weeks of the workshop. Your team members will be
-			thrilled to take home a piece of art they&apos;ve made themselves and use it
-			for their morning routine, creating a lasting memory of the event.
+			pickup within four weeks of the workshop. Your team members will be thrilled
+			to take home a piece of art they&apos;ve made themselves and use it for
+			their morning routine, creating a lasting memory of the event.
 		</p>
 
 		<p>

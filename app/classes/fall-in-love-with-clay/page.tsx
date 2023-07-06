@@ -41,8 +41,8 @@ const Page = () => (
 		</p>
 		<p>
 			The instructor will do final glazing and both kiln firings for you. Your
-			creation will be ready for pickup within 3 weeks after the lesson. You will
-			even be able to use it for your next breakfast!
+			creation will be ready for pickup within four weeks after the lesson. You
+			will even be able to use it for your next breakfast!
 		</p>
 
 		<p>Lesson is followed by 30 min networking session with drinks included.</p>
