@@ -27,8 +27,7 @@ const Page = () => (
 	<article className="p-10 mx-auto prose">
 		<h1>Fall in Love with Clay</h1>
 		<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
-			<ClockIcon /> Next group lesson on <strong>July 23rd</strong> and{" "}
-			<strong>August 6th</strong>!
+			<ClockIcon /> Next group lesson on <strong>Saturday, August 5th</strong>!
 		</p>
 		<p>
 			<strong>Beginner-friendly lesson (In English).</strong> In this 2 hour
