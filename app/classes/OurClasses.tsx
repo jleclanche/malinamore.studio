@@ -33,7 +33,7 @@ const OurClasses = () => (
 			<div>
 				<p className="font-bold text-lg">Group lessons</p>
 				<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
-					<ClockIcon /> Next group lessons on August 5th!
+					<ClockIcon /> Next group lessons on September 10th!
 				</p>
 				<ul className="list-dash pl-4 space-y-1 mt-2">
 					<li>
