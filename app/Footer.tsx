@@ -76,7 +76,7 @@ const Footer = () => (
 					<ExternalLink href="https://instagram.com/malina_more_studio">
 						<InstagramLogo className="w-6 h-6" />
 					</ExternalLink>
-					<ExternalLink href="https://facebook.com/MalinaMoreStudio">
+					<ExternalLink href="https://facebook.com/malinamore.studio">
 						<FacebookLogo className="w-6 h-6" />
 					</ExternalLink>
 					<ExternalLink href="https://meetup.com/Malina-More">

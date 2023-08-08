@@ -51,7 +51,7 @@ const jsonLd: WithContext<LocalBusiness> = {
 	smokingAllowed: false,
 	sameAs: [
 		"https://www.instagram.com/malina_more_studio",
-		"https://www.facebook.com/MalinaMoreStudio",
+		"https://www.facebook.com/malinamore.studio",
 	],
 	parentOrganization: {
 		"@type": "Organization",
