@@ -43,7 +43,7 @@ const jsonLd: WithContext<LocalBusiness> = {
 		postalCode: "1070",
 		addressCountry: "Belgium",
 	},
-	url: "https://www.malinamore.studio",
+	url: "https://malinamore.studio",
 	email: "contact@malinamore.studio",
 	telephone: "+32 2 894 63 38",
 	logo: "https://malinamore.studio/icon.png",
