@@ -17,6 +17,10 @@ const nextConfig = {
 				destination: "https://billing.stripe.com/p/login/9AQ3es9E31kH1heaEE",
 			},
 			{
+				source: "/calendar",
+				destination: "https://lu.ma/malinamore.studio",
+			},
+			{
 				source: "/r/meetup",
 				destination: "https://www.meetup.com/Malina-More/",
 			},
