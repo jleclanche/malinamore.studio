@@ -18,7 +18,7 @@ const nextConfig = {
 			},
 			{
 				source: "/r/facebook",
-				destination: "https://facebook.com/MalinaMoreStudio",
+				destination: "https://facebook.com/malinamore.studio",
 			},
 			{
 				source: "/r/instagram",
@@ -27,7 +27,7 @@ const nextConfig = {
 			{
 				source: "/classes/ceramics-for-fathers-day",
 				destination: "/classes/fall-in-love-with-clay",
-			}
+			},
 		];
 	},
 	experimental: {
