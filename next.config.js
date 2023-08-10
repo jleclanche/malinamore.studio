@@ -13,6 +13,10 @@ const nextConfig = {
 				destination: "https://0z5gh.mjt.lu/wgt/0z5gh/z2t/subscribe?c=8214db8c",
 			},
 			{
+				source: "/billing",
+				destination: "https://billing.stripe.com/p/login/9AQ3es9E31kH1heaEE",
+			},
+			{
 				source: "/r/meetup",
 				destination: "https://www.meetup.com/Malina-More/",
 			},
