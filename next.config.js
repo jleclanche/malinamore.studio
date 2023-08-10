@@ -30,7 +30,7 @@ const nextConfig = {
 			},
 			{
 				source: "/r/instagram",
-				destination: "https://instagram.com/malina_more_studio",
+				destination: "https://instagram.com/malinamore.studio",
 			},
 			{
 				source: "/classes/ceramics-for-fathers-day",

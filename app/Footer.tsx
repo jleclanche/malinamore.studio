@@ -73,7 +73,7 @@ const Footer = () => (
 					</li>
 				</ul>
 				<div className="flex items-center gap-3">
-					<ExternalLink href="https://instagram.com/malina_more_studio">
+					<ExternalLink href="https://instagram.com/malinamore.studio">
 						<InstagramLogo className="w-6 h-6" />
 					</ExternalLink>
 					<ExternalLink href="https://facebook.com/malinamore.studio">

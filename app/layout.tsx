@@ -50,7 +50,7 @@ const jsonLd: WithContext<LocalBusiness> = {
 	description: metadata.description,
 	smokingAllowed: false,
 	sameAs: [
-		"https://www.instagram.com/malina_more_studio",
+		"https://www.instagram.com/malinamore.studio",
 		"https://www.facebook.com/malinamore.studio",
 	],
 	parentOrganization: {
