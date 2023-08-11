@@ -15,18 +15,17 @@ const OurClasses = () => (
 			</p>
 			<p>
 				Each lesson lasts around two-and-a-half hours and includes up to 1kg of
-				clay per person, equipment, and complimentary tea or coffee. Members get
-				20% off all lessons!
+				clay per person, equipment, kiln firing, and complimentary tea or
+				coffee.
 			</p>
 			<p>
-				<EmailLink
-					email={CONTACT_EMAIL}
-					className="text-sky-500 hover:underline"
-				>
-					Contact us
-				</EmailLink>{" "}
-				to book a class. For private lessons, please book at least 5 days in
-				advance. Classes are available in English, French and Russian.
+				<Link href="/memberships">Members</Link> get 20€ off &quot;Fall in Love
+				with Clay&quot; classes, and can attend &quot;Free-style ceramics&quot;
+				classes for free.
+			</p>
+			<p>
+				<strong>Private classes</strong> are available in English, French and
+				Russian. Please book at least 5 days in advance.
 			</p>
 		</div>
 		<div className="grid justify-around grid-flow-row-dense md:grid-flow-col-dense gap-x-8 gap-y-4 max-w-5xl mx-auto">
@@ -45,6 +44,15 @@ const OurClasses = () => (
 						</Link>
 						<span className="block text-sm text-zinc-500">
 							Beginner-friendly. Gift cards available!
+						</span>
+					</li>
+					<li>
+						<ExternalLink href="https://lu.ma/malinamore.studio?utm_source=malinamore.studio&utm_medium=class-link">
+							Free-style ceramics
+						</ExternalLink>{" "}
+						(40 € - Free for members)
+						<span className="block text-sm text-zinc-500">
+							Weekly, every Wednesday.
 						</span>
 					</li>
 					<li>
@@ -71,6 +79,10 @@ const OurClasses = () => (
 						</Link>
 					</li>
 				</ul>
+				<p>
+					Please <EmailLink email={CONTACT_EMAIL}>contact us</EmailLink> to
+					book a class.
+				</p>
 			</div>
 		</div>
 		<ExternalLink
