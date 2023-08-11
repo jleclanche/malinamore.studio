@@ -4,7 +4,7 @@ import { ClockIcon } from "@heroicons/react/24/outline";
 const BookNow = () => (
 	<div className="flex justify-center">
 		<ExternalLink
-			href="https://lu.ma/malinamore.studio"
+			href="https://lu.ma/malinamore.studio?utm_source=malinamore.studio&utm_medium=book-now&utm_campaign=fall-in-love-with-clay"
 			className="w-fit text-white bg-green-700 px-5 py-2 rounded-md shadow-md hover:bg-green-600 no-underline"
 		>
 			Book now (65 €)

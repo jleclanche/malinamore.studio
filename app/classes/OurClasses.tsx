@@ -2,7 +2,7 @@ import { ClockIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import EmailLink from "../components/EmailLink";
 import ExternalLink from "../components/ExternalLink";
-import { CALENDAR_LINK, CONTACT_EMAIL } from "../constants";
+import { CONTACT_EMAIL } from "../constants";
 
 const OurClasses = () => (
 	<div className="flex flex-col gap-5 px-10">
@@ -74,7 +74,7 @@ const OurClasses = () => (
 			</div>
 		</div>
 		<ExternalLink
-			href={CALENDAR_LINK}
+			href="https://lu.ma/malinamore.studio?utm_source=malinamore.studio&utm_medium=book-a-class&utm_campaign=our-classes"
 			className="mx-auto w-fit text-white bg-green-700 px-5 py-2 rounded-md shadow-md hover:bg-green-600 hover:no-underline"
 		>
 			Book a class

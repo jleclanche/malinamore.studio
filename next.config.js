@@ -25,7 +25,8 @@ const nextConfig = {
 			},
 			{
 				source: "/calendar",
-				destination: "https://lu.ma/malinamore.studio",
+				destination:
+					"https://lu.ma/malinamore.studio?utm_source=malinamore.studio&utm_medium=redirect",
 				permanent: false,
 			},
 			{
