@@ -19,9 +19,11 @@ const OurClasses = () => (
 				coffee.
 			</p>
 			<p>
-				<Link href="/memberships">Members</Link> get 20€ off &quot;Fall in Love
-				with Clay&quot; classes, and can attend &quot;Free-style ceramics&quot;
-				classes for free.
+				<Link href="/memberships" className="text-sky-500 hover:underline">
+					Members
+				</Link>{" "}
+				get 20€ off &quot;Fall in Love with Clay&quot; classes, and can attend
+				&quot;Free-style ceramics&quot; classes for free.
 			</p>
 			<p>
 				<strong>Private classes</strong> are available in English, French and
@@ -47,7 +49,10 @@ const OurClasses = () => (
 						</span>
 					</li>
 					<li>
-						<ExternalLink href="https://lu.ma/malinamore.studio?utm_source=malinamore.studio&utm_medium=class-link">
+						<ExternalLink
+							href="https://lu.ma/malinamore.studio?utm_source=malinamore.studio&utm_medium=class-link"
+							className="text-sky-500 hover:underline"
+						>
 							Free-style ceramics
 						</ExternalLink>{" "}
 						(40 € - Free for members)
@@ -79,9 +84,15 @@ const OurClasses = () => (
 						</Link>
 					</li>
 				</ul>
-				<p>
-					Please <EmailLink email={CONTACT_EMAIL}>contact us</EmailLink> to
-					book a class.
+				<p className="mt-3">
+					Please{" "}
+					<EmailLink
+						email={CONTACT_EMAIL}
+						className="text-sky-500 hover:underline"
+					>
+						contact us
+					</EmailLink>{" "}
+					to book a private class.
 				</p>
 			</div>
 		</div>
