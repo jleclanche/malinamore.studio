@@ -66,9 +66,9 @@ const OurClasses = () => (
 			<div>
 				<p className="font-bold text-lg">On-demand classes</p>
 				<ul className="list-dash pl-4 mt-2">
-					<li>1 person: 100 € / lesson</li>
-					<li>2-3 people: 75 € / lesson / person</li>
-					<li>4+ people: 55 € / lesson / person</li>
+					<li>1 person: 125 € / lesson</li>
+					<li>2-4 people: 75 € / lesson / person</li>
+					<li>5+ people: 60 € / lesson / person</li>
 					<li>
 						Large groups:{" "}
 						<Link
