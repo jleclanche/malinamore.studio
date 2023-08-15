@@ -11,8 +11,8 @@ const KilnFirings: React.FC<{ className?: string }> = ({ className }) => (
 	<div className={className}>
 		<p className="font-bold text-lg">Kiln Firings</p>
 		<p className="text-sm text-zinc-500 flex gap-x-1">
-			<InformationCircleIcon className="w-5 h-5" /> Prices indicative for a height
-			of up to 5cm. Kiln plate diameter: 35cm
+			<InformationCircleIcon className="w-5 h-5" /> Kiln plate diameter: 42cm.
+			Kilns available: 43L, 60L, 100L.
 		</p>
 		<p className="text-sm text-zinc-500 flex gap-x-1">
 			<ReceiptPercentIcon className="w-5 h-5" /> 10% off for members and bisque
@@ -49,17 +49,17 @@ const KilnFirings: React.FC<{ className?: string }> = ({ className }) => (
 			</li>
 			<li className="grid grid-cols-[2fr_1fr_1fr] gap-x-2">
 				<span className="flex items-center gap-x-2">
-					<KilnIcon /> Full kiln
+					<KilnIcon /> Full kiln (100L)
 				</span>
 				<span>100 €</span>
 				<span>120 €</span>
 			</li>
 		</ul>
 		<p className="text-sm text-zinc-500">
-			We fire our kilns at least once a week, on Fridays. You will be able to pick
-			up your piece the following Monday. For special shapes, bulk orders, and
-			custom temperatures, <EmailLink email={CONTACT_EMAIL}>contact us</EmailLink>
-			.
+			Prices indicative for a height of up to 5cm. We fire our kilns at least once
+			a week, on Fridays. You will be able to pick up your piece the following
+			Monday. For special shapes, bulk orders, and custom temperatures,{" "}
+			<EmailLink email={CONTACT_EMAIL}>contact us</EmailLink>.
 		</p>
 	</div>
 );
