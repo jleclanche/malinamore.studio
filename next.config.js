@@ -49,6 +49,12 @@ const nextConfig = {
 				destination: "/classes/fall-in-love-with-clay",
 				permanent: false,
 			},
+			{
+				source: "/r/campaign/281495453454941",
+				destination:
+					"https://lu.ma/5-day-painting-masterclass-with-norman-faber?utm_source=google-ads&utm_campaign=281495453454941&utm_medium=redirect",
+				permanent: false,
+			},
 		];
 	},
 	experimental: {
