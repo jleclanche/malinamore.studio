@@ -45,6 +45,18 @@ const nextConfig = {
 				permanent: false,
 			},
 			{
+				source: "/r/card-qr",
+				destination:
+					"https://lu.ma/malinamore.studio?utm_source=card-qr&utm_medium=redirect",
+				permanent: false,
+			},
+			{
+				source: "/r/flyer-qr",
+				destination:
+					"https://lu.ma/malinamore.studio?utm_source=flyer-qr&utm_medium=redirect",
+				permanent: false,
+			},
+			{
 				source: "/classes/ceramics-for-fathers-day",
 				destination: "/classes/fall-in-love-with-clay",
 				permanent: false,
