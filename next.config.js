@@ -45,7 +45,7 @@ const nextConfig = {
 				permanent: false,
 			},
 			{
-				source: "/r/card-qr",
+				source: "/qr/card",
 				destination:
 					"https://lu.ma/malinamore.studio?utm_source=card-qr&utm_medium=redirect",
 				permanent: false,
