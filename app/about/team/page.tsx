@@ -23,6 +23,11 @@ const people = [
 		image: "/images/team/daria.jpg",
 		linkedin: "https://www.linkedin.com/in/daria-shcherbak-56747a102",
 	},
+	{
+		name: "Sooyoung Lee",
+		role: "Volunteer • Manager • Coordinator",
+		image: "/images/team/sooyoung.jpg",
+	},
 ];
 
 const TeamPage = () => (
