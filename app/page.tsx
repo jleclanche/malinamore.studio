@@ -62,23 +62,27 @@ export default function Home() {
 			</section> */}
 
 			<section className="max-w-5xl flex flex-col gap-5">
-				<Gallery
-					photos={[
-						{ src: "/images/photos/gallery/1.jpg" },
-						{ src: "/images/photos/gallery/2.jpg" },
-						{ src: "/images/photos/gallery/3.jpg" },
-						{ src: "/images/photos/gallery/4.jpg" },
-					]}
-				/>
 				<p className="text-center">
 					Malina More Studio is a beautiful 180m<sup>2</sup> ceramics, arts &
 					crafts studio in Brussels, next to Anderlecht City Hall.
 				</p>
+				<Gallery
+					photos={[
+						{ src: "/images/photos/gallery/3.jpg" },
+						{ src: "/images/photos/gallery/4.jpg" },
+					]}
+				/>
 			</section>
 
 			<section id="our-classes" className="bg-zinc-100 w-full py-5">
 				<OurClasses />
 			</section>
+			<Gallery
+				photos={[
+					{ src: "/images/photos/gallery/1.jpg" },
+					{ src: "/images/photos/gallery/2.jpg" },
+				]}
+			/>
 
 			<section id="services" className="bg-zinc-100 w-full py-5">
 				<div className="px-10">

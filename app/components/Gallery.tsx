@@ -1,16 +1,14 @@
 const Gallery: React.FC<{ photos: Array<{ src: string; alt?: string }> }> = ({
 	photos,
 }) => (
-	<div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
+	<div className="grid gap-x-2 gap-y-10 grid-cols-2 mx-5">
 		{photos.map((photo) => (
-			<div key={photo.src} className="group relative">
-				<div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75">
-					<img
-						src={photo.src}
-						alt={photo.alt}
-						className="object-cover object-center"
-					/>
-				</div>
+			<div key={photo.src} className="flex justify-center">
+				<img
+					src={photo.src}
+					alt={photo.alt}
+					className="object-cover object-center max-h-64 rounded-md hover:opacity-75"
+				/>
 			</div>
 		))}
 	</div>
