@@ -1,4 +1,4 @@
-import { ClockIcon } from "@heroicons/react/24/outline";
+import { CalendarIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import EmailLink from "../components/EmailLink";
 import ExternalLink from "../components/ExternalLink";
@@ -34,7 +34,13 @@ const OurClasses = () => (
 			<div>
 				<p className="font-bold text-lg">Group lessons</p>
 				<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
-					<ClockIcon /> Next group lessons on September 10th!
+					<CalendarIcon /> For the full schedule,
+					<ExternalLink
+						href="https://cal.malinamore.studio"
+						className="underline"
+					>
+						see our calendar
+					</ExternalLink>
 				</p>
 				<ul className="list-dash pl-4 space-y-1 mt-2">
 					<li>

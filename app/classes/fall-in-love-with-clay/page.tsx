@@ -27,7 +27,10 @@ const Page = () => (
 	<article className="p-10 mx-auto prose">
 		<h1>Fall in Love with Clay</h1>
 		<p className="text-sm text-zinc-500 flex items-center gap-x-1 mt-1">
-			<ClockIcon /> Next group lesson on <strong>Sunday, September 10th</strong>!
+			<ClockIcon /> Our full schedule is available here:{" "}
+			<ExternalLink href="https://cal.malinamore.studio">
+				cal.malinamore.studio
+			</ExternalLink>
 		</p>
 		<p>
 			<strong>Beginner-friendly lesson (In English).</strong> In this 2 hour

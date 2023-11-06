@@ -1,6 +1,7 @@
-import EmailSubscriptionWidget from "./EmailSubscriptionWidget";
+import { CalendarDaysIcon, SwatchIcon } from "@heroicons/react/24/outline";
 import OurClasses from "./classes/OurClasses";
 import EmailLink from "./components/EmailLink";
+import ExternalLink from "./components/ExternalLink";
 import Gallery from "./components/Gallery";
 import TelLink from "./components/TelLink";
 import { CONTACT_EMAIL, CONTACT_PHONE } from "./constants";
@@ -17,34 +18,42 @@ export default function Home() {
 				<p className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter my-6">
 					Learn. Grow. Share.
 				</p>
-				<p>
-					Malina More Studio is a beautiful 180m<sup>2</sup> ceramics, arts &
-					crafts studio in Brussels, next to Anderlecht City Hall.
-				</p>
-				<p>
-					We host weekly ceramic classes and offer kiln rentals as well as
-					co-working and event space.
-				</p>
-				<p>
-					You can reach us at{" "}
+				<p className="text-center">
+					{" "}
 					<EmailLink
 						email={CONTACT_EMAIL}
 						className="text-sky-500 hover:underline"
 					/>{" "}
-					or{" "}
+					&bull;{" "}
 					<TelLink
 						phoneNumber={CONTACT_PHONE}
 						className="text-sky-500 hover:underline"
-					/>{" "}
-					if you have any questions.
+					/>
 				</p>
 			</section>
 
-			<section className="max-w-2xl md:!py-0 text-center">
-				<h2 className="font-bold text-xl mb-4">
-					Sign up to the monthly newsletter
-				</h2>
-				<EmailSubscriptionWidget />
+			<section className="max-w-2xl text-center flex gap-5">
+				<ExternalLink
+					href="https://cal.malinamore.studio"
+					className="flex items-center gap-1 mx-auto w-fit text-white bg-green-800 p-3 rounded-md shadow-md hover:bg-green-700 hover:no-underline"
+				>
+					<CalendarDaysIcon />
+					View our events
+				</ExternalLink>{" "}
+				<ExternalLink
+					href="https://lu.ma/malinamore.studio?utm_source=malinamore.studio&utm_medium=book-a-class&utm_campaign=our-classes"
+					className="flex items-center gap-1 mx-auto w-fit text-white bg-green-700 p-3 rounded-md shadow-md hover:bg-green-600 hover:no-underline"
+				>
+					<SwatchIcon />
+					Book a class
+				</ExternalLink>
+				<ExternalLink
+					href="https://buy.stripe.com/5kA3eUbAw03nbzW3cc"
+					className="flex items-center gap-1 mx-auto w-fit text-white bg-green-600 p-3 rounded-md shadow-md hover:bg-green-500 hover:no-underline"
+				>
+					<SwatchIcon />
+					Buy a Gift Card
+				</ExternalLink>
 			</section>
 			{/*
 			<section className="self-stretch overflow-hidden text-center">
@@ -61,6 +70,10 @@ export default function Home() {
 						{ src: "/images/photos/gallery/4.jpg" },
 					]}
 				/>
+				<p className="text-center">
+					Malina More Studio is a beautiful 180m<sup>2</sup> ceramics, arts &
+					crafts studio in Brussels, next to Anderlecht City Hall.
+				</p>
 			</section>
 
 			<section id="our-classes" className="bg-zinc-100 w-full py-5">
