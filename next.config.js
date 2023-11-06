@@ -51,6 +51,12 @@ const nextConfig = {
 				permanent: false,
 			},
 			{
+				source: "/qr/gift-card",
+				destination:
+					"https://lu.ma/malinamore.studio?utm_source=giftcard-qr&utm_medium=redirect",
+				permanent: false,
+			},
+			{
 				source: "/r/flyer-qr",
 				destination:
 					"https://lu.ma/malinamore.studio?utm_source=flyer-qr&utm_medium=redirect",
